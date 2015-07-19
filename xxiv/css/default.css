@@ -1,0 +1,228 @@
+﻿input {
+    vertical-align: top;
+    float: left;
+    height: auto;
+}
+
+#ButtonR124, #ButtonSolvAll {
+    float:right;
+}
+
+select {
+    border-color: transparent;
+    font-size: 130px;
+    font-weight: bold;
+    background-color: transparent;
+    width: 170px;
+}
+
+.stack {
+    clear: both;
+}
+
+.topbuttons {
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 9;
+}
+
+.bottombutts {
+    -ms-grid-row: 9;
+    -ms-grid-column-span: 9;
+}
+
+.topbuttons > input, .bottombutts > input {
+    height:90%;
+    border-color: yellowgreen;
+    font-family: 'Lucida Console';
+    color: black;
+	font-size: 30px;
+    background-color: greenyellow;
+    margin-left: 2%; 
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 0px;
+}
+
+.bottombutts > input {
+    vertical-align: bottom;
+    margin-top: 0px;
+}
+
+#container {
+	width: auto;
+	padding: 0px;
+    border:none;
+	height:auto;
+	overflow-y:auto;
+	resize:vertical;
+}
+
+#game, #calc, #text, #help {
+    width: 720px;
+}
+
+#calc, #text {
+    margin-top:2%;
+}
+
+#game_board {
+    display: -ms-grid;
+        -ms-grid-columns: 1fr auto 1fr 1fr auto 1fr 1fr auto 1fr;
+        -ms-grid-rows: 2fr auto 1fr 1fr auto 1fr 1fr auto 2fr;
+    width: 100%;
+    height: 720px;
+    background-image: url('../media/bg3.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    background-position: top left;
+}
+
+#Select1 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+}
+
+#Select2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+}
+
+#Select3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 8;
+}
+
+#Select4 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 5;
+}
+
+#Console {
+    font-family: 'Courier New';
+	font-size: 40px;
+    width: 100%;
+    border:inherit;
+    padding:inherit;
+	min-height: 400px;
+	height:auto;
+	overflow-y: auto;
+	resize: vertical;
+}
+
+#LED1 {
+    width:100%;
+    height:50px;
+    font-family: 'Lucida Console';
+    font-size: 48px;
+    color: white;
+    background-color: black;
+    padding: inherit;
+    border: inherit;
+}
+
+#keypad {
+    width:100%;
+    height: 225px;
+    display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr;
+    background-color: black;
+}
+
+.control, .number, .equals {
+    vertical-align:top;
+    -ms-grid-column-align: center;
+    width: 90%;
+    height: 90%;
+    min-height: 40px;
+    min-width: 40px;
+    border: none;
+    font-family: 'Lucida Console';
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.control {
+    background-color:lightgray;
+}
+
+.number {
+    background-color: darkgray;
+}
+
+.disabled {
+    color: darkgray;
+}
+
+.equals {
+    background-color:darkred;
+}
+
+#clear {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+#clearE {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+}
+
+#plus {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+#minus {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+}
+
+#times {
+    -ms-grid-column: 4;
+    -ms-grid-row: 1;
+}
+
+#divide {
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+}
+
+#openp {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
+
+#closep {
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+}
+
+#first {
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+}
+
+#second {
+    -ms-grid-column: 4;
+    -ms-grid-row: 2;
+}
+
+#third {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+}
+
+#fourth {
+    -ms-grid-column: 4;
+    -ms-grid-row: 3;
+}
+
+#equals {
+    -ms-grid-column: 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+}

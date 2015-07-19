@@ -1,0 +1,618 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Planetary Age Server</title>
+</head>
+
+<body background="planets.gif" bgcolor="#000000" text="#FFFFFF">
+<script language="JavaScript"><!--
+
+
+
+
+
+function jul2date(jdate)
+
+
+{
+
+
+  var I, F, A, B, C, D, E, G, day, month, year
+
+
+
+
+
+  I = Math.floor(jdate + 0.5)
+
+
+  F = jdate + 0.5 - I
+
+
+  //all dates later than 2299160
+
+
+  A = Math.floor((I - 1867216.25)/36524.25)
+
+
+  B = I + 1 + A - Math.floor(A/4)
+
+
+  C = B + 1524
+
+
+  D = Math.floor((C - 122.1)/365.25)
+
+
+  E = Math.floor(365.25 * D)
+
+
+  G = Math.floor((C - E)/30.6001)
+
+
+  day = C - E + F - Math.floor(30.6001 * G)
+
+
+
+
+
+  if (G < 13.5)
+
+
+    month = G - 1
+
+
+  else
+
+
+    month = G - 13
+
+
+
+
+
+  if (month > 2.5)
+
+
+    year = D - 4716
+
+
+  else
+
+
+    year = D - 4715
+
+
+
+
+
+  this.month = month
+
+
+  this.day = Math.floor(day)
+
+
+  this.year = year
+
+
+}
+
+
+
+
+
+function julian(mydt)
+
+
+{
+
+
+  this.y = (mydt.getYear() % 1900) + 1900
+
+
+  this.m = mydt.getMonth() + 1
+
+
+  this.d = mydt.getDate()
+
+
+  var A, B, C, D
+
+
+  var y = this.y
+
+
+  var m = this.m
+
+
+
+
+
+  if ( (m == 1) || (m == 2))
+
+
+  {
+
+
+    y = y - 1
+
+
+    m = m + 12
+
+
+  }
+
+
+  // all dates after 15-Oct-1582
+
+
+  A = Math.floor(y/100)
+
+
+  B = 2 - A + Math.floor(A/4)
+
+
+  C = Math.floor(y * 365.25)
+
+
+  D = Math.floor(30.6001 * (m + 1))
+
+
+  this.jul = (B + C + D + this.d + 1720994.5)
+
+
+}
+
+
+
+
+
+function planet(rper, rdiv, bjul)
+
+
+{
+
+
+  this.age = Math.round(bjul.diff/rper)/rdiv
+
+
+  this.nextage = Math.floor(this.age + 1.0)
+
+
+  this.nextdate = new jul2date(bjul.jul + (this.nextage * rper * rdiv))  
+
+
+}
+
+
+
+
+
+function mythings(bjdate)
+
+
+{
+
+
+  this.merc  = new planet(0.8797, 100.0, bjdate)
+
+
+  this.venus = new planet(2.2470, 100.0, bjdate)
+
+
+  this.earth = new planet(3.6525, 100.0, bjdate)
+
+
+  //Earth's years are not always the same length so...
+
+
+  this.earth.nextdate.month = bjdate.m
+
+
+  this.earth.nextdate.day = bjdate.d
+
+
+  this.earth.nextdate.year = bjdate.y + this.earth.nextage
+
+
+  this.mars  = new planet(6.8698, 100.0, bjdate)
+
+
+  this.jup   = new planet(4.33271, 1000.0, bjdate)
+
+
+  this.sat   = new planet(10.7595, 1000.0, bjdate)
+
+
+  this.uran  = new planet(30.685, 1000.0, bjdate)
+
+
+  this.nept  = new planet(60.1900, 1000.0, bjdate)
+
+
+  this.pluto = new planet(90.800, 1000.0, bjdate)
+
+
+}
+
+
+
+
+
+function process(form1)
+
+
+{
+
+
+  var now = new Date()
+
+
+
+
+
+  // Validate: some browsers bottom out dates at 1/1/70
+
+
+
+
+
+  if (Date.parse("January 1 1900") == Date.parse("January 1 1969"))
+
+
+  {
+
+
+    if ((form1.T1.value < 1970) || (form1.T1.value > (1900 + (now.getYear() % 1900))))
+
+
+    {
+
+
+        alert("Enter a year between 1970 and " + (1900 + (now.getYear() % 1900)))
+
+
+        return false
+
+
+    }
+
+
+  }
+
+
+  else 
+
+
+  {
+
+
+    if ((form1.T1.value < 1900) || (form1.T1.value > (1900 + (now.getYear() % 1900))))
+
+
+    {
+
+
+        alert("Enter a year between 1900 and " + (1900 + (now.getYear() % 1900)))
+
+
+        return false
+
+
+    }
+
+
+  }
+
+
+
+
+
+  // Passed validation!
+
+
+
+
+
+  var bdate = new Date()
+
+
+
+
+
+  bdate.setTime(Date.parse(
+
+
+    form1.D1.options[form1.D1.selectedIndex].value + 
+
+
+    form1.D2.options[form1.D2.selectedIndex].value + 
+
+
+    form1.T1.value))
+
+
+
+
+
+  var bjulian = new julian(bdate)
+
+
+  var days = new julian(now)
+
+
+  bjulian.diff = days.jul - bjulian.jul
+
+
+  
+
+
+  if (bjulian.diff < 0)
+
+
+  {
+
+
+    alert("Cannot process a birthday in the future!")
+
+
+    return false
+
+
+  }
+
+
+
+
+
+  var mydata = new mythings(bjulian)
+
+
+
+
+
+  document.writeln("<html><head><title>Planetary Age Server Results</title></head>" +
+
+
+    "<body><h3>Today is " + now.toLocaleString() + "</h3>")
+
+
+
+  document.writeln("<h2>Your birthday is " +
+
+
+    bjulian.m + "/" + bjulian.d + "/" + bjulian.y + "</h2>")
+
+
+
+  document.writeln("<h3>You are " + bjulian.diff + " Earth Days old</h3>")
+
+
+
+
+  document.writeln("<p><em>Mercury</em><br>You are " + mydata.merc.age + 
+
+
+    " Mercurial years old; you will turn " + mydata.merc.nextage + 
+
+
+    " on " + mydata.merc.nextdate.month + "/" + mydata.merc.nextdate.day +
+
+
+    "/" + mydata.merc.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Venus</em><br>You are " + mydata.venus.age + 
+
+
+    " Venerian years old; you will turn " + mydata.venus.nextage + 
+
+
+    " on " + mydata.venus.nextdate.month + "/" + mydata.venus.nextdate.day +
+
+
+    "/" + mydata.venus.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Earth</em><br>You are " + mydata.earth.age + 
+
+
+    " Terrestrial years old; you will turn " + mydata.earth.nextage + 
+
+
+    " on " + mydata.earth.nextdate.month + "/" + mydata.earth.nextdate.day +
+
+
+    "/" + mydata.earth.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Mars</em><br>You are " + mydata.mars.age + 
+
+
+    " Martian years old; you will turn " + mydata.mars.nextage + 
+
+
+    " on " + mydata.mars.nextdate.month + "/" + mydata.mars.nextdate.day +
+
+
+    "/" + mydata.mars.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Jupiter</em><br>You are " + mydata.jup.age + 
+
+
+    " Jovian years old; you will turn " + mydata.jup.nextage + 
+
+
+    " on " + mydata.jup.nextdate.month + "/" + mydata.jup.nextdate.day +
+
+
+    "/" + mydata.jup.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Saturn</em><br>You are " + mydata.sat.age + 
+
+
+    " Saturnian years old; you will turn " + mydata.sat.nextage + 
+
+
+    " on " + mydata.sat.nextdate.month + "/" + mydata.sat.nextdate.day +
+
+
+    "/" + mydata.sat.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Uranus</em><br>You are " + mydata.uran.age + 
+
+
+    " Uranian years old; you will turn " + mydata.uran.nextage + 
+
+
+    " on " + mydata.uran.nextdate.month + "/" + mydata.uran.nextdate.day +
+
+
+    "/" + mydata.uran.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Neptune</em><br>You are " + mydata.nept.age + 
+
+
+    " Neptunian years old; you will turn " + mydata.nept.nextage + 
+
+
+    " on " + mydata.nept.nextdate.month + "/" + mydata.nept.nextdate.day +
+
+
+    "/" + mydata.nept.nextdate.year + ".</p>")
+
+
+
+
+
+  document.writeln("<p><em>Pluto</em><br>You are " + mydata.pluto.age + 
+
+
+    " Plutonian years old; you will turn " + mydata.pluto.nextage + 
+
+
+    " on " + mydata.pluto.nextdate.month + "/" + mydata.pluto.nextdate.day +
+
+
+    "/" + mydata.pluto.nextdate.year + ".</p>")
+
+
+
+
+  document.write("<b><p><a href=\"http://www.exploratorium.edu/ronh/weight/index.html\">" + 
+
+
+    "Click here for <I>Your Weight on Other Planets</I></A></p>")
+
+
+
+  document.write("<b><p><a href=\"javascript:history.go(-2)\">Return</a></p></body></html>")
+
+
+  document.close()
+
+
+  return false
+
+
+}
+
+
+// --></script>
+
+<h1 class="center">Planetary Age Server </h1>
+
+<form onsubmit="return process(this)">
+    <h2>Enter your date of birth:</h2>
+    <table class="noborder">
+        <tr>
+            <td><strong>Month</strong></td>
+            <td><strong>Day</strong></td>
+            <td><strong>Year</strong></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><select name="D1" size="1">
+                <option selected value=" January "> January </option>
+                <option value=" February "> February </option>
+                <option value=" March "> March </option>
+                <option value=" April "> April </option>
+                <option value=" May "> May </option>
+                <option value=" June "> June </option>
+                <option value=" July "> July </option>
+                <option value=" August "> August </option>
+                <option value=" September "> September </option>
+                <option value=" October "> October </option>
+                <option value=" November "> November </option>
+                <option value=" December "> December </option>
+            </select> </td>
+            <td><select name="D2" size="1">
+                <option selected value=" 1 "> 1 </option>
+                <option value=" 2 "> 2 </option>
+                <option value=" 3 "> 3 </option>
+                <option value=" 4 "> 4 </option>
+                <option value=" 5 "> 5 </option>
+                <option value=" 6 "> 6 </option>
+                <option value=" 7 "> 7 </option>
+                <option value=" 8 "> 8 </option>
+                <option value=" 9 "> 9 </option>
+                <option value=" 10 "> 10 </option>
+                <option value=" 11 "> 11 </option>
+                <option value=" 12 "> 12 </option>
+                <option value=" 13 "> 13 </option>
+                <option value=" 14 "> 14 </option>
+                <option value=" 15 "> 15 </option>
+                <option value=" 16 "> 16 </option>
+                <option value=" 17 "> 17 </option>
+                <option value=" 18 "> 18 </option>
+                <option value=" 19 "> 19 </option>
+                <option value=" 20 "> 20 </option>
+                <option value=" 21 "> 21 </option>
+                <option value=" 22 "> 22 </option>
+                <option value=" 23 "> 23 </option>
+                <option value=" 24 "> 24 </option>
+                <option value=" 25 "> 25 </option>
+                <option value=" 26 "> 26 </option>
+                <option value=" 27 "> 27 </option>
+                <option value=" 28 "> 28 </option>
+                <option value=" 29 "> 29 </option>
+                <option value=" 30 "> 30 </option>
+                <option value=" 31 "> 31 </option>
+            </select> </td>
+            <td><input type="text" size="5" name="T1"
+            value="1900"> </td>
+            <td><input type="button" name="B1" value="Enter"
+            language="JavaScript" onclick="process(this.form)"> </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

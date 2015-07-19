@@ -1,0 +1,189 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<title>The Johnson Family Album API Fun Page</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1 class="center">John's API Fun Page</h1>
+
+<p class="center"><span class="oldjfa">Requires IE5+ and Medium-low or
+Low Security Settings</span></p>
+
+<form name="form1" onsubmit="javascript:return false;">
+    <p class="center"><strong>Enter Your 5-Digit ZIP Code </strong><input
+    type="text" size="6" name="T1" value="20855"> <input type="button"
+    name="B1" value="Process"> <script language="VBScript"
+    src="processzip.htm"></script> <script language="VBScript"><!--
+
+Function CapAllWords(MyString)
+    Dim PosSpc, holdIt
+    For PosSpc = 1 to Len(MyString)
+		If PosSpc = 1 Then
+			holdIt = UCase(Mid(MyString, 1, 1)) 
+		ElseIf Mid(MyString, PosSpc - 1, 1) = " " Then
+			holdIt = holdIt & UCase(Mid(MyString, PosSpc, 1))
+		Else
+			holdIt = holdIt & LCase(Mid(MyString, PosSpc, 1))
+		End If
+    Next
+    CapAllWords = holdIt 
+End Function 
+
+Sub B1_onClick
+	Dim zip, city, state
+   
+	zip = form1.T1.value
+
+   If (Len(zip) <> 5) Or (Not IsNumeric(zip)) Then
+      MsgBox "Enter a valid, 5-digit, numeric, US ZIP code, eh?"
+
+	ElseIf processZIP(zip, city, state) Then
+      city = CapAllWords(city)
+      banner1.innerHTML = "<H3 align=center>" & _
+			city & ", " & _
+			state & "  " & zip & "</H3>"
+		form2.AD3.value = city & ", " & state
+		form3.ask.value = "Where is " & city & ", " & state & "?"
+		xeeinput.q1.value = city
+		form4.keyword.value = city & " " & CapAllWords(state)
+	   'form5.qtext.value = city & ", " & CapAllWords(state)
+	Else
+      banner1.innerHTML = "&nbsp;"
+		form2.AD3.value = " "
+		form3.ask.value = " "
+		xeeinput.q1.value = " "
+		form4.keyword.value = " "
+	   'form5.qtext.value = " "
+	End If
+End Sub
+--></script></p>
+</form>
+
+<hr>
+<div class="center"><center>
+
+<table border="2" width="70%">
+    <tr>
+        <td class="w100" id="banner1">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="w100"><div class="center"><center><table
+        border="2">
+            <tr>
+                <td><form
+                action="http://www.ask.com/main/askjeeves.asp"
+                method="get" name="form3">
+                    <div class="center"><center><table border="2">
+                        <tr>
+                            <td class="center" bgcolor="#00FF00"><strong>Ask
+                            Jeeves about Your City</strong></td>
+                        </tr>
+                        <tr>
+                            <td><p class="center"><input
+                            type="text" size="50" maxlength="200"
+                            name="ask" value="DERWOOD MD"> </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center" valign="bottom"><a
+                            href="http://www.ask.com/">
+                            <img
+                            src="jeevesLogoRight.gif"
+                            alt="Ask Jeeves is a trademark of Ask Jeeves, Inc., Copyright 1996-1999 Ask Jeeves, Inc."
+                            align="top" class="noborder" width="125" height="57"></a><span class="oldjfa"
+                            face="Arial,Helvetica"> <input
+                            type="submit" value="Ask!"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="oldjfa"
+                            face="Times New Roman, Times, serif">Ask
+                            Jeeves is a trademark of Ask Jeeves,
+                            Inc., Copyright 1996-1999 Ask Jeeves,
+                            Inc.</span></td>
+                        </tr>
+                    </table>
+                    </center></div>
+                </form>
+                </td>
+            </tr>
+        </table>
+        </center></div></td>
+    </tr>
+    <tr>
+        <td class="w100"><form
+        action="http://encarta.msn.com/teleport/toConcise/fromfindwin.asp"
+        method="get" name="xeeinput" target="_top">
+            <div class="center"><center><table class="noborder"
+            cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><p class="center"><input type="text" value="DERWOOD MD"
+                    size="32" maxlength="100" name="q1"><input
+                    type="image" name src="go_dark.gif"
+                    align="absbottom" class="noborder" width="30" height="30"> </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="center"><font color="#666666"
+                    size="2" face="verdana, arial, helvetica"><b>Type
+                    in a word or phrase to go to <br>
+                    Microsoft® Encarta® Concise Encyclopedia</b>
+                    </span></p>
+                    </td>
+                </tr>
+            </table>
+            </center></div>
+        </form>
+        </td>
+    </tr>
+    <tr>
+        <td class="w100"><form
+        action="http://www.amazon.com/exec/obidos/external-search"
+        method="get" name="form4">
+            <input type="hidden" name="tag"
+            value="johnsonfamilyalb"><div class="center"><center><table
+            border="1" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="center" bgcolor="#FFFFFF"><font
+                    size="2" face="verdana,arial,helvetica"><b>Search:</b></span>
+                    <select name="mode" size="1">
+                        <option value="blended">All Products </option>
+                        <option value="books">Books </option>
+                        <option value="music">Popular Music </option>
+                        <option value="classical-music">Classical Music </option>
+                        <option value="video">Video </option>
+                        <option value="toys">Toys </option>
+                        <option value="electronics">Electronics </option>
+                    </select> </td>
+                    <td class="center" rowspan="2"
+                    bgcolor="#FFFFFF">Find books about ...<br>
+                    <input type="text" size="20" name="keyword" value="DERWOOD MD"><br>
+                    <input type="submit" name="Search"
+                    value="Search" class="noborder"> </td>
+                </tr>
+                <tr>
+                    <td class="center" valign="top"
+                    bgcolor="#000000"><a
+                    href="http://www.amazon.com/exec/obidos/redirect-home/johnsonfamilyalb">
+                    <img
+                    src="amzlogo.gif" alt="Amazon.com logo"
+                    class="noborder" width="125" height="60"></a> </td>
+                </tr>
+            </table>
+            </center></div>
+        </form>
+        </td>
+    </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+<p class="center"><a href="johnspage.htm">Return</a></p>
+</body>
+</html>

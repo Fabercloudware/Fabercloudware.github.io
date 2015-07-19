@@ -1,0 +1,57 @@
+Function processZIP(zip, city, state)
+    On Error Resume Next
+    processZIP = True
+    city = ""
+    state = ""
+
+    Dim domRef
+    Set domRef = CreateObject("MSXML.DOMDocument")
+    domRef.async = False
+    domRef.Load "http://production.shippingapis.com/ShippingAPI.dll?" & _
+        "API=CityStateLookup&XML=<CityStateLookupRequest " & _
+        "USERID=""792COMPA6547"" PASSWORD=""811BX21FB402"">" & _
+        "<ZipCode ID=""Z0""><Zip5>" & zip & "</Zip5></ZipCode>" & _
+        "</CityStateLookupRequest>"
+    
+    If Err.Number <> 0 Then
+        MsgBox "API Error" & Chr(10) & _
+            "Probably cause: Security too restricted" & _
+            Chr(10) & "Try making me a Trusted Site" & _
+				Chr(10) & "with Low or Medium-low Security."
+        processZIP = False
+
+    ElseIf domRef.documentElement.nodeName <> "CityStateLookupResponse" Then
+        MsgBox "API Response Error" & Chr(10) & _
+            "Probably cause: Server is hosed" & _
+            Chr(10) & "Try again later"
+        processZIP = False
+
+    Else
+        Dim zipRef
+        Set zipRef = domRef.documentElement.firstChild
+        
+        If (Not IsObject(zipRef)) Or (zipRef.nodeName <> "ZipCode") Then
+            MsgBox "API Response Error" & Chr(10) & _
+                "Probably cause: I messed up" & _
+                Chr(10) & "Send me mail"
+                processZIP = False
+
+        Else
+            Dim kid
+            For Each kid In zipRef.childNodes
+                Select Case kid.nodeName
+                    Case "Error" : 
+                        MsgBox "API Response Error" & Chr(10) & _
+                            "Probably cause: Your ZIP Code Sucks" & _
+                            Chr(10) & "Try a *real* ZIP Code, Chester"
+                        processZIP = False : Exit For
+                    Case "City" : city = kid.firstChild.nodeValue
+                    Case "State" : state = kid.firstChild.nodeValue
+                End Select
+            Next 
+        End If
+
+        Set zipRef = Nothing
+    End If
+    Set domRef = Nothing
+End Function

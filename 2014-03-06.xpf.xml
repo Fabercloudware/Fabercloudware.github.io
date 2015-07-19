@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XPF document for the Thursday, March 6, 2014 New York Times crossword.-->
+<!--Conforms to Universal Crossword Puzzle Format XPF. See www.xwordinfo.com/XPF for details and licensing information.-->
+<?xml-stylesheet type="text/xsl" href="xpf-to-html-v1.xslt"?>
+<Puzzles Version="1.0">
+  <Puzzle>
+    <Title>NY Times, Thu, Mar 06, 2014</Title>
+    <Author>Daniel Raymon</Author>
+    <Editor>Will Shortz</Editor>
+    <Publisher>The New York Times</Publisher>
+    <Date>3/6/2014</Date>
+    <Size>
+      <Rows>15</Rows>
+      <Cols>15</Cols>
+    </Size>
+    <Grid>
+      <Row>JAMBS.PART.RAFT</Row>
+      <Row>ALERT.ARIE.ACAI</Row>
+      <Row>RIGOR.SOBE.DECT</Row>
+      <Row>...NONAMES.TRIO</Row>
+      <Row>SEIZHEDAY.JIBES</Row>
+      <Row>INHASTE.EMIR...</Row>
+      <Row>AGAR.WNW.ONEON.</Row>
+      <Row>MED.SOAPBOX.KOS</Row>
+      <Row>.LABOR.ARN.MAMA</Row>
+      <Row>...ROKS.USURPED</Row>
+      <Row>KARAT.PISTNGINE</Row>
+      <Row>ANUT.CROSSER...</Row>
+      <Row>BIBI.LINE.SEIKO</Row>
+      <Row>OTIS.ANIL.CECIL</Row>
+      <Row>BAKL.PTAS.ONEND</Row>
+    </Grid>
+    <RebusEntries>
+      <Rebus Row="3" Col="12" Short="D">DIAL</Rebus>
+      <Rebus Row="5" Col="4" Short="Z">ZEST</Rebus>
+      <Rebus Row="11" Col="10" Short="T">TONE</Rebus>
+      <Rebus Row="15" Col="4" Short="L">LAVA</Rebus>
+    </RebusEntries>
+    <Clues>
+      <Clue Row="1" Col="1" Num="1" Dir="Across" Ans="JAMBS">Side pieces</Clue>
+      <Clue Row="1" Col="7" Num="6" Dir="Across" Ans="PART">Tenor in a barbershop quartet, e.g.</Clue>
+      <Clue Row="1" Col="12" Num="10" Dir="Across" Ans="RAFT">Lot</Clue>
+      <Clue Row="2" Col="1" Num="14" Dir="Across" Ans="ALERT">Quick</Clue>
+      <Clue Row="2" Col="7" Num="15" Dir="Across" Ans="ARIE">Singer India.___</Clue>
+      <Clue Row="2" Col="12" Num="16" Dir="Across" Ans="ACAI">Modern yogurt flavor</Clue>
+      <Clue Row="3" Col="1" Num="17" Dir="Across" Ans="RIGOR">Strictness</Clue>
+      <Clue Row="3" Col="7" Num="18" Dir="Across" Ans="SOBE">Pepsi-owned beverage brand</Clue>
+      <Clue Row="3" Col="12" Num="19" Dir="Across" Ans="DIALECT">Cajun French, e.g.</Clue>
+      <Clue Row="4" Col="4" Num="20" Dir="Across" Ans="NONAMES">Ones little-known in their fields</Clue>
+      <Clue Row="4" Col="12" Num="22" Dir="Across" Ans="TRIO">TLC, e.g.</Clue>
+      <Clue Row="5" Col="1" Num="23" Dir="Across" Ans="SEIZESTHEDAY">Doesn't waste an opportunity</Clue>
+      <Clue Row="5" Col="11" Num="26" Dir="Across" Ans="JIBES">Agrees</Clue>
+      <Clue Row="6" Col="1" Num="27" Dir="Across" Ans="INHASTE">Quickly</Clue>
+      <Clue Row="6" Col="9" Num="28" Dir="Across" Ans="EMIR">Qatari leader</Clue>
+      <Clue Row="7" Col="1" Num="30" Dir="Across" Ans="AGAR">Ingredient in many Asian desserts</Clue>
+      <Clue Row="7" Col="6" Num="31" Dir="Across" Ans="WNW">Dallas-to-Amarillo dir.</Clue>
+      <Clue Row="7" Col="10" Num="33" Dir="Across" Ans="ONEON">Common situation near the start of an inning</Clue>
+      <Clue Row="8" Col="1" Num="36" Dir="Across" Ans="MED">Many a shot in the arm, for short?</Clue>
+      <Clue Row="8" Col="5" Num="37" Dir="Across" Ans="SOAPBOX">Platform ... or something that appears four times in this puzzle?</Clue>
+      <Clue Row="8" Col="13" Num="39" Dir="Across" Ans="KOS">Decks, in brief</Clue>
+      <Clue Row="9" Col="2" Num="41" Dir="Across" Ans="LABOR">Management's counterpart</Clue>
+      <Clue Row="9" Col="8" Num="43" Dir="Across" Ans="ARN">Royal son of the comics</Clue>
+      <Clue Row="9" Col="12" Num="44" Dir="Across" Ans="MAMA">First word, maybe</Clue>
+      <Clue Row="10" Col="4" Num="45" Dir="Across" Ans="ROKS">Seoul soldiers</Clue>
+      <Clue Row="10" Col="9" Num="47" Dir="Across" Ans="USURPED">Assumed</Clue>
+      <Clue Row="11" Col="1" Num="49" Dir="Across" Ans="KARAT">24-___</Clue>
+      <Clue Row="11" Col="7" Num="52" Dir="Across" Ans="PISTONENGINE">Device that converts pressure into a rotating motion</Clue>
+      <Clue Row="12" Col="1" Num="54" Dir="Across" Ans="ANUT">"Some Kind of ___" (Dick Van Dyke comedy)</Clue>
+      <Clue Row="12" Col="6" Num="55" Dir="Across" Ans="CROSSER">Double-___</Clue>
+      <Clue Row="13" Col="1" Num="56" Dir="Across" Ans="BIBI">Actress Andersson</Clue>
+      <Clue Row="13" Col="6" Num="57" Dir="Across" Ans="LINE">"Come here often?," e.g.</Clue>
+      <Clue Row="13" Col="11" Num="58" Dir="Across" Ans="SEIKO">Japanese watch</Clue>
+      <Clue Row="14" Col="1" Num="62" Dir="Across" Ans="OTIS">Redding of R&amp;B</Clue>
+      <Clue Row="14" Col="6" Num="63" Dir="Across" Ans="ANIL">Blue hue</Clue>
+      <Clue Row="14" Col="11" Num="64" Dir="Across" Ans="CECIL">British poet laureate ___ Day-Lewis</Clue>
+      <Clue Row="15" Col="1" Num="65" Dir="Across" Ans="BAKLAVA">Honey-soaked dessert</Clue>
+      <Clue Row="15" Col="6" Num="66" Dir="Across" Ans="PTAS">Some fund-raising grps.</Clue>
+      <Clue Row="15" Col="11" Num="67" Dir="Across" Ans="ONEND">Upright</Clue>
+      <Clue Row="1" Col="1" Num="1" Dir="Down" Ans="JAR">Rattle</Clue>
+      <Clue Row="1" Col="2" Num="2" Dir="Down" Ans="ALI">Athlete with the autobiography "The Soul of a Butterfly"</Clue>
+      <Clue Row="1" Col="3" Num="3" Dir="Down" Ans="MEG">Computer storage unit, informally</Clue>
+      <Clue Row="1" Col="4" Num="4" Dir="Down" Ans="BRONZESTAR">Military decoration</Clue>
+      <Clue Row="1" Col="5" Num="5" Dir="Down" Ans="STROHS">German beer now owned by the Pabst Brewing Company</Clue>
+      <Clue Row="1" Col="7" Num="6" Dir="Down" Ans="PASADENA">Annual parade locale</Clue>
+      <Clue Row="1" Col="8" Num="7" Dir="Down" Ans="AROMA">Wine feature</Clue>
+      <Clue Row="1" Col="9" Num="8" Dir="Down" Ans="RIBEYE">Kind of steak</Clue>
+      <Clue Row="1" Col="10" Num="9" Dir="Down" Ans="TEES">Casual wear</Clue>
+      <Clue Row="1" Col="12" Num="10" Dir="Down" Ans="RADIALTIRE">Traction provider</Clue>
+      <Clue Row="1" Col="13" Num="11" Dir="Down" Ans="ACERB">Sharp</Clue>
+      <Clue Row="1" Col="14" Num="12" Dir="Down" Ans="FACIE">Prima ___</Clue>
+      <Clue Row="1" Col="15" Num="13" Dir="Down" Ans="TITOS">Fuentes and Puente</Clue>
+      <Clue Row="4" Col="6" Num="21" Dir="Down" Ans="NETWORK">Socialize professionally</Clue>
+      <Clue Row="5" Col="1" Num="23" Dir="Down" Ans="SIAM">Land name before 1939</Clue>
+      <Clue Row="5" Col="2" Num="24" Dir="Down" Ans="ENGEL">Heavenly figure, in Hesse</Clue>
+      <Clue Row="5" Col="3" Num="25" Dir="Down" Ans="IHADA">"___ lovely time"</Clue>
+      <Clue Row="5" Col="11" Num="26" Dir="Down" Ans="JINX">Curse</Clue>
+      <Clue Row="6" Col="10" Num="29" Dir="Down" Ans="MOONSTONES">Opalescent gems</Clue>
+      <Clue Row="7" Col="8" Num="32" Dir="Down" Ans="WPA">New Deal inits.</Clue>
+      <Clue Row="7" Col="13" Num="34" Dir="Down" Ans="OKAPI">Relative of a giraffe</Clue>
+      <Clue Row="7" Col="14" Num="35" Dir="Down" Ans="NOMEN">"Tullius" in Marcus Tullius Cicero</Clue>
+      <Clue Row="8" Col="5" Num="37" Dir="Down" Ans="SOOT">Pipe buildup</Clue>
+      <Clue Row="8" Col="9" Num="38" Dir="Down" Ans="BRUSSELS">European city whose airport is the world's largest chocolate-selling point</Clue>
+      <Clue Row="8" Col="15" Num="40" Dir="Down" Ans="SADE">Singer with the 1986 #1 album "Promise"</Clue>
+      <Clue Row="9" Col="4" Num="42" Dir="Down" Ans="BRATISLAVA">Capital on the Danube</Clue>
+      <Clue Row="9" Col="12" Num="44" Dir="Down" Ans="MRGREEN">Character in Clue</Clue>
+      <Clue Row="10" Col="7" Num="46" Dir="Down" Ans="SPRINT">Nascar's ___ Cup Series</Clue>
+      <Clue Row="10" Col="11" Num="48" Dir="Down" Ans="UNESCO">Paris-based grp. since 1945</Clue>
+      <Clue Row="11" Col="1" Num="49" Dir="Down" Ans="KABOB">Item purchased at many a food cart</Clue>
+      <Clue Row="11" Col="2" Num="50" Dir="Down" Ans="ANITA">"West Side Story" woman</Clue>
+      <Clue Row="11" Col="3" Num="51" Dir="Down" Ans="RUBIK">Cube creator</Clue>
+      <Clue Row="11" Col="8" Num="53" Dir="Down" Ans="IONIA">Aegean region</Clue>
+      <Clue Row="12" Col="6" Num="55" Dir="Down" Ans="CLAP">Pat-a-cake element</Clue>
+      <Clue Row="13" Col="13" Num="59" Dir="Down" Ans="ICE">Cube makeup</Clue>
+      <Clue Row="13" Col="14" Num="60" Dir="Down" Ans="KIN">It's all relatives</Clue>
+      <Clue Row="13" Col="15" Num="61" Dir="Down" Ans="OLD">Familiar</Clue>
+    </Clues>
+    <JeffNotes><![CDATA[Rebus with a revealer; SOAPBOX describing the four different brands of SOAP crammed into individual BOXes. In today's age of ever evolving crosswords, straight rebuses without a revealer have sort of run their course. I like that Dani has given us a reason why he's made these four rebus squares; it adds a nice touch to the puzzle. 
+
+<p>I found it a lot of fun sussing out where the rebus squares were. Once I uncovered the central answer, it was a bit of a puzzle hunt to go seek them out (and boy, do I like puzzle hunts!). For me, the hardest one by far was TONE, because I had never heard of that brand. The others gave me a nice a-ha moment, but TONE was a bit of a head-scratcher. (And no, I wasn't scratching my head because I don't use enough soap, thank you.) It was too bad, because being a mechanical engineer at heart, I loved the PISTON ENGINE entry. I was amused to hear that it was one of Dani's least favorite themers. Funny how widely tastes differ, eh?</p>
+
+<p>In general, if there are only a few rebus squares, I really appreciate when they get placed into the longest answers of the puzzle, in snazzier entries. ZEST inside SEIZES THE DAY and BRONZE STAR, that's great. Really nice moment of discovery. DIAL in DIALECT... not as much. Although I did admire the craziness of LAVA in BRATISLAVA and BAKLAVA. That was pretty cool.</p>
+
+<p>With essentially nine theme answers, the fill is bound to suffer a little, and we see signs of it in the awkward I HAD A (for whatever reason, several close constructor friends and I detest the five-letter partial &mdash; go figure), A NUT, WNW, WPA, ROKS sort of stuff. It certainly wasn't that bad, and definitely worth the trade-off for me. </p>
+
+<p>Some solvers will not even notice though. A very nice reader, Lois Padawer, wrote in a few weeks ago with a comment after I pooh-poohed A MOLE in a grid: "I just learned about 'Whac-a-mole' a couple of weeks ago, as it was the name of an episode of The Good Wife (the name of the episode appears when you click "Info" on Tivo). TV is not usually one of my favorite categories, but you never know where pleasure will come from in a puzzle." </p>
+
+<p>So yes, partials are generally inelegant, but they can serve their purposes. And it's always good to get a dose of humility, perhaps a good reminder that I don't know everything; that I always have more to learn today than I did yesterday. And that's okay.</p>
+
+<p>Ahem. Note the word "perhaps."</p>]]></JeffNotes>
+    <ConNotes><![CDATA[This is my first Thursday puzzle so I'm very excited for everyone to see it. It's especially exciting to have my very own creation join the group of <a href="http://www.xwordinfo.com/Rebus">NYT rebus puzzles</a>. On that note, there have been other rebus puzzles using "box" phrases as revealers, just like this one. One thing that makes mine a little different, I think, is that each rebus box is a different word. I also like how I was able to split up both ZEST and TONE in two different ways; not so for LAVA and DIAL, but at least there's some symmetry there &mdash; two split up differently, two not.  
+
+<p>I also like the long answers for the most part, though PASADENA, BRUSSELS, and BRATIS[LAVA] might be a bit too much geography for one puzzle.  Also RA[DIAL] TIRE and PIS[TON E]NGINE are a bit bland, especially for theme answers. Oh well. Overall I'm very happy with the puzzle, and I hope you enjoy it too!</p>]]></ConNotes>
+  </Puzzle>
+</Puzzles>
