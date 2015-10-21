@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XPF document for the Thursday, February 27, 2014 New York Times crossword.-->
+<!--Conforms to Universal Crossword Puzzle Format XPF. See www.xwordinfo.com/XPF for details and licensing information.-->
+<?xml-stylesheet type="text/xsl" href="xpf-to-html-v1.xslt"?>
+<Puzzles Version="1.0">
+  <Puzzle>
+    <Title>NY Times, Thu, Feb 27, 2014</Title>
+    <Author>Stanley Newman</Author>
+    <Editor>Will Shortz</Editor>
+    <Publisher>The New York Times</Publisher>
+    <Date>2/27/2014</Date>
+    <Size>
+      <Rows>15</Rows>
+      <Cols>15</Cols>
+    </Size>
+    <Grid>
+      <Row>.SCARCE.FACADE.</Row>
+      <Row>.OHIOAN.AMAZIN.</Row>
+      <Row>.DONTTALKABOUT.</Row>
+      <Row>MASTS.MOE.ARRID</Row>
+      <Row>APE..YEA.PLENTY</Row>
+      <Row>YOURSELFWE.SALE</Row>
+      <Row>APPALL.SOAR.LED</Row>
+      <Row>...GOLF.OPEL...</Row>
+      <Row>ARP.BOBS.ODISTS</Row>
+      <Row>SEAT.WILLDOTHAT</Row>
+      <Row>IDIOCY.OAS..RNA</Row>
+      <Row>ARDOR.AMY.WHINY</Row>
+      <Row>.AFTERYOULEAVE.</Row>
+      <Row>.FOODIE.PORTER.</Row>
+      <Row>.TROOPS.STEELY.</Row>
+    </Grid>
+    <Clues>
+      <Clue Row="1" Col="2" Num="1" Dir="Across" Ans="SCARCE">Pretty hard to find</Clue>
+      <Clue Row="1" Col="9" Num="7" Dir="Across" Ans="FACADE">Front</Clue>
+      <Clue Row="2" Col="2" Num="13" Dir="Across" Ans="OHIOAN">Orville Wright or Neil Armstrong</Clue>
+      <Clue Row="2" Col="9" Num="14" Dir="Across" Ans="AMAZIN">___ Avenue (Mets' community website)</Clue>
+      <Clue Row="3" Col="2" Num="15" Dir="Across" Ans="DONTTALKABOUT">Sign at a neighborhood bar, part 1</Clue>
+      <Clue Row="4" Col="1" Num="17" Dir="Across" Ans="MASTS">Spars</Clue>
+      <Clue Row="4" Col="7" Num="18" Dir="Across" Ans="MOE">Server of Duff Beer to Homer Simpson</Clue>
+      <Clue Row="4" Col="11" Num="19" Dir="Across" Ans="ARRID">Dry Idea alternative</Clue>
+      <Clue Row="5" Col="1" Num="21" Dir="Across" Ans="APE">Big, clumsy guy</Clue>
+      <Clue Row="5" Col="6" Num="22" Dir="Across" Ans="YEA">Indeed</Clue>
+      <Clue Row="5" Col="10" Num="23" Dir="Across" Ans="PLENTY">Quite a bit</Clue>
+      <Clue Row="6" Col="1" Num="24" Dir="Across" Ans="YOURSELFWE">Part 2 of the sign</Clue>
+      <Clue Row="6" Col="12" Num="28" Dir="Across" Ans="SALE">Crowd drawer, often</Clue>
+      <Clue Row="7" Col="1" Num="29" Dir="Across" Ans="APPALL">Severely consternate</Clue>
+      <Clue Row="7" Col="8" Num="30" Dir="Across" Ans="SOAR">Go up, up, up</Clue>
+      <Clue Row="7" Col="13" Num="32" Dir="Across" Ans="LED">Made the first move</Clue>
+      <Clue Row="8" Col="4" Num="33" Dir="Across" Ans="GOLF">Play a round</Clue>
+      <Clue Row="8" Col="9" Num="35" Dir="Across" Ans="OPEL">General Motors subsidiary</Clue>
+      <Clue Row="9" Col="1" Num="37" Dir="Across" Ans="ARP">Artist known as either Jean or Hans</Clue>
+      <Clue Row="9" Col="5" Num="40" Dir="Across" Ans="BOBS">Gatsby-era hairstyles</Clue>
+      <Clue Row="9" Col="10" Num="42" Dir="Across" Ans="ODISTS">Some Coleridge colleagues</Clue>
+      <Clue Row="10" Col="1" Num="46" Dir="Across" Ans="SEAT">Accommodate, as passengers</Clue>
+      <Clue Row="10" Col="6" Num="48" Dir="Across" Ans="WILLDOTHAT">Part 3 of the sign</Clue>
+      <Clue Row="11" Col="1" Num="50" Dir="Across" Ans="IDIOCY">Folly</Clue>
+      <Clue Row="11" Col="8" Num="52" Dir="Across" Ans="OAS">Alliance HQ'd near the White House</Clue>
+      <Clue Row="11" Col="13" Num="53" Dir="Across" Ans="RNA">Key molecule for protein synthesis</Clue>
+      <Clue Row="12" Col="1" Num="54" Dir="Across" Ans="ARDOR">Fire</Clue>
+      <Clue Row="12" Col="7" Num="55" Dir="Across" Ans="AMY">Adams of "American Hustle"</Clue>
+      <Clue Row="12" Col="11" Num="56" Dir="Across" Ans="WHINY">Prone to beefing</Clue>
+      <Clue Row="13" Col="2" Num="58" Dir="Across" Ans="AFTERYOULEAVE">End of the sign</Clue>
+      <Clue Row="14" Col="2" Num="61" Dir="Across" Ans="FOODIE">Epicurean explorer</Clue>
+      <Clue Row="14" Col="9" Num="62" Dir="Across" Ans="PORTER">"Anything Goes" composer</Clue>
+      <Clue Row="15" Col="2" Num="63" Dir="Across" Ans="TROOPS">U.S.O. Care Package recipients</Clue>
+      <Clue Row="15" Col="9" Num="64" Dir="Across" Ans="STEELY">Coldly determined</Clue>
+      <Clue Row="1" Col="2" Num="1" Dir="Down" Ans="SODAPOP">Redundant-sounding refreshment</Clue>
+      <Clue Row="1" Col="3" Num="2" Dir="Down" Ans="CHOSEUP">Formed, as schoolyard teams, say</Clue>
+      <Clue Row="1" Col="4" Num="3" Dir="Down" Ans="AINT">"Hit 'em where they ___"</Clue>
+      <Clue Row="1" Col="5" Num="4" Dir="Down" Ans="ROTS">Turns bad</Clue>
+      <Clue Row="1" Col="6" Num="5" Dir="Down" Ans="CAT">Subject of many a viral video</Clue>
+      <Clue Row="1" Col="7" Num="6" Dir="Down" Ans="ENAMEL">Hardest substance in the human body</Clue>
+      <Clue Row="1" Col="9" Num="7" Dir="Down" Ans="FAKE">Forgery</Clue>
+      <Clue Row="1" Col="10" Num="8" Dir="Down" Ans="AMA">Org. offering group practice membership</Clue>
+      <Clue Row="1" Col="11" Num="9" Dir="Down" Ans="CABAL">Ring of rebels</Clue>
+      <Clue Row="1" Col="12" Num="10" Dir="Down" Ans="AZORES">Columbus stopping point of 1493</Clue>
+      <Clue Row="1" Col="13" Num="11" Dir="Down" Ans="DIURNAL">Active when the sun shines</Clue>
+      <Clue Row="1" Col="14" Num="12" Dir="Down" Ans="ENTITLE">Provide, as a right</Clue>
+      <Clue Row="3" Col="8" Num="16" Dir="Down" Ans="LOAFS">Slacks off</Clue>
+      <Clue Row="4" Col="1" Num="17" Dir="Down" Ans="MAYA">Pre-Columbian civilization</Clue>
+      <Clue Row="4" Col="15" Num="20" Dir="Down" Ans="DYED">Like some blonds</Clue>
+      <Clue Row="5" Col="6" Num="22" Dir="Down" Ans="YELLOWY">Blond</Clue>
+      <Clue Row="5" Col="10" Num="23" Dir="Down" Ans="PEAPODS">Staple of Chinese cuisine</Clue>
+      <Clue Row="6" Col="4" Num="25" Dir="Down" Ans="RAG">Many a tune in "The Sting"</Clue>
+      <Clue Row="6" Col="5" Num="26" Dir="Down" Ans="SLOB">Challenging employer for a maid</Clue>
+      <Clue Row="6" Col="9" Num="27" Dir="Down" Ans="WOO">Seek to espouse</Clue>
+      <Clue Row="7" Col="11" Num="31" Dir="Down" Ans="REDO">Second version</Clue>
+      <Clue Row="8" Col="7" Num="34" Dir="Down" Ans="FBI">Patriot Act enforcer</Clue>
+      <Clue Row="8" Col="12" Num="36" Dir="Down" Ans="LIT">Fiction course, for short</Clue>
+      <Clue Row="9" Col="1" Num="37" Dir="Down" Ans="ASIA">Locale of three Summer Olympics</Clue>
+      <Clue Row="9" Col="2" Num="38" Dir="Down" Ans="REDRAFT">Second version</Clue>
+      <Clue Row="9" Col="3" Num="39" Dir="Down" Ans="PAIDFOR">Purchased</Clue>
+      <Clue Row="9" Col="8" Num="41" Dir="Down" Ans="SLOMO">Time-stretching effect</Clue>
+      <Clue Row="9" Col="13" Num="43" Dir="Down" Ans="SHRIVEL">Contract</Clue>
+      <Clue Row="9" Col="14" Num="44" Dir="Down" Ans="TANNERY">Suede source</Clue>
+      <Clue Row="9" Col="15" Num="45" Dir="Down" Ans="STAY">Canine command</Clue>
+      <Clue Row="10" Col="4" Num="47" Dir="Down" Ans="TOOTOO">Overdone</Clue>
+      <Clue Row="10" Col="9" Num="49" Dir="Down" Ans="LAYUPS">Easy hoops shots</Clue>
+      <Clue Row="11" Col="5" Num="51" Dir="Down" Ans="CREDO">Belief</Clue>
+      <Clue Row="12" Col="7" Num="55" Dir="Down" Ans="AYES">All those in favor</Clue>
+      <Clue Row="12" Col="11" Num="56" Dir="Down" Ans="WERE">Used to be</Clue>
+      <Clue Row="12" Col="12" Num="57" Dir="Down" Ans="HATE">"In time we ___ that which we often fear": Shak.</Clue>
+      <Clue Row="13" Col="6" Num="59" Dir="Down" Ans="RIP">Cut in the direction of the grain</Clue>
+      <Clue Row="13" Col="10" Num="60" Dir="Down" Ans="LOT">Christie's offering</Clue>
+    </Clues>
+    <JeffNotes><![CDATA[Quote puzzles have an incredible ability to draw out strong reactions from solvers, some people loving them, some people calling for the guillotine. Well, I say haters gonna hate, solvers gonna solve. Not totally sure what that means, but it sounds catchy.
+
+<p>A veteran of the crossword world steps in for his first NYT puzzle in quite some time. Stan edits the Newsday crossword, and often comes up with the hardest puzzle each week, his "Saturday Stumper." I wrote one Stumper for him and tried to race Dan Feyer on it. But Stan had upped the difficulty so much, I barely solved it, having to guess in a few places (chalk up another victory to Dan; no surprise).</p>
+
+<p>The quote today is amusing, although I found it slightly too easy in that I was able to guess the quip with a lot of blanks still out. And these days quote puzzles have become a bit overdone, requiring a truly hilarious or surprising quote in order to make it stand out. I did like today's, but I didn't personally find it to be something I'd tweet. Look at me, joining the 20th century! (Twitter: @JeffChenWrites)</p>
+
+<p>I found the grid very interesting, though. Very unusual to see three black squares stacked in each of the corners. These "cheater squares" are a bit unsightly, but they are necessary when putting a 13 (or 14) letter entry in rows 3 and 13. Doing this does let Stan spread out his four theme entries so that it's easier to make a low word-count grid (72). And there is something visually cool about seeing those rectangular blocks. Perhaps it's just the novelty of it, but they started to grow on me. I wouldn't want them very often but to see them once in a while is a nice change of pace (just like a quote puzzle!).</p>
+
+<p>One trademark of Stan's "Saturday Stumpers" is that he's very careful to avoid easy-to-answer three letter entries like SST, ESE, etc. And true to form, look at the care he's put into this grid: very few subpar entries. Maybe REDRAFT is the least appealing piece of fill? And not a single three-letter entry is a stinker. That's very good work. Granted, there isn't much with a "wow" factor, perhaps SODA POP or PEAPODS as the snappiest entries. But that's what often comes with a tight, clean grid. </p>
+
+<p>I appreciate both ends of the spectrum: Stan's ultra-clean but not as snazzy approach on one end, and other constructors' wildly fresh but with a necessary sprinkling of crosswordese on the other.</p>]]></JeffNotes>
+    <ConNotes><![CDATA[Inspiration for this puzzle came from my 30-year-old son Marc (whom Will bounced on his knee at my home about 27 years ago), who sells items on eBay for his London office-salvage business.  One of his recent items was a plaque with the theme message, for which only the original WE'LL needed to be changed to WE WILL to break perfectly.  By dumb luck, Will was short of non-rebus Thursdays, so it appears today only 19 days after he OK'd it. 
+ 
+<p>I clue puzzles hard by having as many "new" clues as possible, requiring some thought and reasoning to solve, rather than ones that can be solved at sight by solvers with good memories.  Most of the new factual clues here come from Internet research, such as 52A, 63A, 8D and 34D.</p> 
+ 
+<p>An added requirement to my harder clues is that only general knowledge should be required to understand them, even if the fact itself isn't well-known.  For example, anyone from New York should know that AMAZIN (14A) is associated with the Mets, so it shouldn't be surprising that a website all about the Mets is called Amazin' Avenue.</p>
+ 
+<p>One other clue nicety here that might not be obvious: a factual balance between new pop culture (like 18A, 55A), older (40A, 25D), and historical (42A, 10D). I made sure that all my factual references could be quickly and authoritatively verified with Google, and passed that info along to Will with the puzzle.</p> 
+ 
+<p>While some my new clues for uncapitalized answers also come from Web research ("Time-stretching" for 41D SLO-MO came from a Wikipedia article), I can often think of something fresh by just letting my mind wander.  That's where I got 56A and 1D, for instance.</p>
+ 
+<p>Will is obviously on-board with all of this thinking, since he kept about 75% of my clues, including all the ones cited above.</p>
+ 
+<p>In the 1,000+ crosswords I've constructed and the 5,000+ I've edited (for the New York newspaper <a href="http://www.stanxwords.com/today-newsday-crossword.html">Newsday</a> and <a href="http://www.puzzlesocial.com/">Puzzle Social</a>) since adopting Crossword Compiler in 2000, I've found that with careful grid patterning it's never necessary to use obscurities, even for wide-open grids such as the 72-worder here.  This sometimes requires that I check Google News and Google Books, to be sure that words I think are in common current use actually are. I look forward to the day where this fussiness will be standard procedure for constructors, so we can finally bid the OLEOs, OLIOs and ANILs of crosswordese an unfond farewell.</p>
+ 
+<p>Anyone wishing to throw bouquets or stones at me, or a constructor wishing to learn more about my "crud-free" approach to puzzlemaking, is welcome to contact me through <a href="http://www.stanxwords.com/">my website</a>.</p>]]></ConNotes>
+  </Puzzle>
+</Puzzles>
