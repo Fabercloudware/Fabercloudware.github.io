@@ -1,0 +1,68 @@
+body {
+	font-family: Arial;
+	font-size: 8pt;
+	color: #FFFFFF;
+	background-color: #046688;
+}
+
+table {
+	font-size: 8pt;
+}
+
+.value {
+}
+
+.header {
+	font-weight: bold;
+	font-size: 150%;
+	text-align: left;
+	padding: 2 2 2 2;
+	background-color: #046688;
+  border: solid 1px;
+}
+
+.shading {
+	background-color: #777777;  
+}
+
+.title {
+  font-size : 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+	color: #FFFFFF;	
+}
+
+.navigation {
+}
+
+.navigationline {
+  padding: 2px 0px;
+}
+
+.navlink {
+  text-align: center;
+  display: inline;
+	color: #FFFFFF;	
+	font-size: 8pt;
+	font-weight : bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navlink#current {
+  border: solid 1px;
+}
+
+.navlink a {
+	text-decoration: none;
+	color: #FFFFFF;	
+	font-size: 8pt;
+	font-weight : bold;
+}
+
+.navlink a:hover {
+	text-decoration: underline;
+}
