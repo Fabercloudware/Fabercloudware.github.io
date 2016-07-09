@@ -1,0 +1,40 @@
+<galleries>
+  <gallery id="flextravel">
+    <photo>
+      <description/>
+      <source small="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182819646564000000-o.jpg" normal="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182819646564000000-o.jpg" fullscreen="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182819646564000000-o.jpg"/>
+      <transactionEffect>PanRight</transactionEffect>
+    </photo>
+    <photo>
+      <description/>
+      <source small="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182742244003000000-o.jpg" normal="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182742244003000000-o.jpg" fullscreen="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182742244003000000-o.jpg"/>
+      <transactionEffect>ZoomIn</transactionEffect>
+    </photo>
+    <photo>
+      <description/>
+      <source small="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182841605295000000-o.jpg" normal="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182841605295000000-o.jpg" fullscreen="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182841605295000000-o.jpg"/>
+      <transactionEffect>PanRight</transactionEffect>
+    </photo>
+    <photo>
+      <description/>
+      <source small="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182911025342000000-o.jpg" normal="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182911025342000000-o.jpg" fullscreen="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182911025342000000-o.jpg"/>
+      <transactionEffect>TiltUp</transactionEffect>
+    </photo>
+    <photo>
+      <description/>
+      <source small="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182930861868000000-o.jpg" normal="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182930861868000000-o.jpg" fullscreen="http://cdn.resize.flexmls.com/scr/640x480/true/20160323182930861868000000-o.jpg"/>
+      <transactionEffect>PanLeft</transactionEffect>
+    </photo>
+    <photo>
+      <description/>
+      <source small="http://cdn.resize.flexmls.com/scr/640x480/true/20160323183012047809000000-o.jpg" normal="http://cdn.resize.flexmls.com/scr/640x480/true/20160323183012047809000000-o.jpg" fullscreen="http://cdn.resize.flexmls.com/scr/640x480/true/20160323183012047809000000-o.jpg"/>
+      <transactionEffect>ZoomOut</transactionEffect>
+    </photo>
+  </gallery>
+  <soundFile id="audioFile">
+    <url>http://45.56.88.239:8080/swf/audios/Numb.mp3</url>
+  </soundFile>
+  <fadeDelay>1000</fadeDelay>
+  <timerDelay>5</timerDelay>
+  <maintainAspectRatio>false</maintainAspectRatio>
+</galleries>

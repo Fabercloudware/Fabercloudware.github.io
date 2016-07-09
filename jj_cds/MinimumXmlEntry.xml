@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<musicinfo>
+ <musiclist>
+    <music>
+      <title>Insomnia</title>
+      <releasedate>
+        <year>
+          <displayname>2007</displayname>
+        </year>
+      </releasedate>
+      <artists>
+        <artist>
+          <displayname>(hed) pe</displayname> <!-- needs both, can be the same -->
+          <sortname>(hed) pe</sortname>
+        </artist>
+      </artists>
+      <label>
+        <displayname>Suburban Noize</displayname>
+      </label>
+      <links>
+        <link>
+          <url>http://www.amazon.com/exec/obidos/ASIN/B000QFAENW/collectorzcom-20</url> <!-- just replace the code /B000QFAENW/ with your ASIN leaving the rest as-is -->
+        </link>
+      </links>
+    </music>
+  </musiclist>
+</musicinfo>
