@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:rl="http://realtylist.com">
+   <Document>
+      <Style>
+         <IconStyle>
+            <scale>0.8</scale>
+         </IconStyle>
+         <LineStyle>
+            <color>ffbc822f</color>
+            <width>2</width>
+         </LineStyle>
+         <PolyStyle>
+            <color>7fe1ca9e</color>
+         </PolyStyle>
+      </Style>
+      <Folder>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-76.3058225 41.1274835 0.6341908821384493">-76.313845,41.123927,0.0 -76.314576,41.121098,0.0 -76.30951,41.122585,0.0 -76.304253,41.125225,0.0 -76.300794,41.125589,0.0 -76.300482,41.124269,0.0 -76.297602,41.124989,0.0 -76.297069,41.131036,0.0 -76.297755,41.133869,0.0 -76.301295,41.133841,0.0 -76.302634,41.130896,0.0 -76.312646,41.127651,0.0 -76.312158,41.125456,0.0 -76.313845,41.123927,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-76.4806725 40.4122625 0.7455203521243121">-76.488572,40.417114,0.0 -76.489471,40.414833,0.0 -76.487086,40.412446,0.0 -76.484857,40.406814,0.0 -76.486264,40.405573,0.0 -76.485648,40.403804,0.0 -76.479312,40.407257,0.0 -76.471874,40.408135,0.0 -76.472698,40.408573,0.0 -76.473156,40.413154,0.0 -76.473744,40.414133,0.0 -76.474613,40.415336,0.0 -76.476454,40.420721,0.0 -76.482806,40.418855,0.0 -76.486375,40.418561,0.0 -76.488572,40.417114,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+      </Folder>
+   </Document>
+</kml>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:rl="http://realtylist.com">
+   <Document>
+      <Style>
+         <IconStyle>
+            <scale>0.8</scale>
+         </IconStyle>
+         <LineStyle>
+            <color>ffbc822f</color>
+            <width>2</width>
+         </LineStyle>
+         <PolyStyle>
+            <color>7fe1ca9e</color>
+         </PolyStyle>
+      </Style>
+      <Folder>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-78.682256 40.842963999999995 1.3155949639687996">-78.695654,40.844522,0.0 -78.695648,40.839143,0.0 -78.695642,40.826845,0.0 -78.694398,40.826856,0.0 -78.694427,40.829082,0.0 -78.691162,40.82914,0.0 -78.687864,40.827928,0.0 -78.675299,40.827761,0.0 -78.675346,40.831061,0.0 -78.669449,40.837209,0.0 -78.672393,40.839644,0.0 -78.668858,40.841914,0.0 -78.676802,40.848829,0.0 -78.684137,40.844186,0.0 -78.687917,40.847703,0.0 -78.677189,40.854297,0.0 -78.683693,40.859068,0.0 -78.685702,40.859083,0.0 -78.685944,40.85021,0.0 -78.695332,40.850288,0.0 -78.695654,40.844522,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-77.55504400000001 40.1367985 0.38478738810506735">-77.558075,40.138931,0.0 -77.560468,40.137488,0.0 -77.556048,40.133081,0.0 -77.54962,40.135359,0.0 -77.55081,40.139703,0.0 -77.555424,40.140516,0.0 -77.558075,40.138931,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+      </Folder>
+   </Document>
+</kml>

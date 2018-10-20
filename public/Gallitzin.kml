@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:rl="http://realtylist.com">
+   <Document>
+      <Style>
+         <IconStyle>
+            <scale>0.8</scale>
+         </IconStyle>
+         <LineStyle>
+            <color>ffbc822f</color>
+            <width>2</width>
+         </LineStyle>
+         <PolyStyle>
+            <color>7fe1ca9e</color>
+         </PolyStyle>
+      </Style>
+      <Folder>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-78.55585300000001 40.4802615 0.7587986248537938">-78.564844,40.483603,0.0 -78.566111,40.482368,0.0 -78.560711,40.476766,0.0 -78.555121,40.472533,0.0 -78.550147,40.474142,0.0 -78.549195,40.475942,0.0 -78.545595,40.480868,0.0 -78.546233,40.481415,0.0 -78.545652,40.482846,0.0 -78.546412,40.483046,0.0 -78.545762,40.484447,0.0 -78.546602,40.484666,0.0 -78.546485,40.48666,0.0 -78.548562,40.487199,0.0 -78.555056,40.48799,0.0 -78.559645,40.485717,0.0 -78.564844,40.483603,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+      </Folder>
+   </Document>
+</kml>

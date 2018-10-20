@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:rl="http://realtylist.com">
+   <Document>
+      <Style>
+         <IconStyle>
+            <scale>0.8</scale>
+         </IconStyle>
+         <LineStyle>
+            <color>ffbc822f</color>
+            <width>2</width>
+         </LineStyle>
+         <PolyStyle>
+            <color>7fe1ca9e</color>
+         </PolyStyle>
+      </Style>
+      <Folder>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-80.057474 41.068745 1.236792299341793">-80.068419,41.062997,0.0 -80.068668,41.058979,0.0 -80.066638,41.058952,0.0 -80.058678,41.058845,0.0 -80.060025,41.057291,0.0 -80.058474,41.056579,0.0 -80.055986,41.056608,0.0 -80.056017,41.053892,0.0 -80.052545,41.053905,0.0 -80.051977,41.052959,0.0 -80.051297,41.055194,0.0 -80.049516,41.055179,0.0 -80.050347,41.05645,0.0 -80.048576,41.058285,0.0 -80.04628,41.058856,0.0 -80.047421,41.058878,0.0 -80.047418,41.059542,0.0 -80.048887,41.059558,0.0 -80.048971,41.064613,0.0 -80.047534,41.069685,0.0 -80.048546,41.069736,0.0 -80.048534,41.070805,0.0 -80.051805,41.070835,0.0 -80.051709,41.084531,0.0 -80.0597,41.08437,0.0 -80.066426,41.083096,0.0 -80.066691,41.062982,0.0 -80.068419,41.062997,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+               <innerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-80.0625025 41.071053 0.10196259037168905">-80.063389,41.069873,0.0 -80.063678,41.070092,0.0 -80.063088,41.072233,0.0 -80.061327,41.071812,0.0 -80.061631,41.069873,0.0 -80.063389,41.069873,0.0</coordinates>
+                  </LinearRing>
+               </innerBoundaryIs>
+            </Polygon>
+         </Placemark>
+      </Folder>
+   </Document>
+</kml>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:rl="http://realtylist.com">
+   <Document>
+      <Style>
+         <IconStyle>
+            <scale>0.8</scale>
+         </IconStyle>
+         <LineStyle>
+            <color>ffbc822f</color>
+            <width>2</width>
+         </LineStyle>
+         <PolyStyle>
+            <color>7fe1ca9e</color>
+         </PolyStyle>
+      </Style>
+      <Folder>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-80.0030185 40.009935999999996 0.7589222379561849">-80.012764,40.010936,0.0 -80.009729,40.009252,0.0 -80.006168,40.008786,0.0 -80.004362,40.007708,0.0 -80.004386,40.006415,0.0 -80.003445,40.00445,0.0 -80.003195,40.004548,0.0 -80.003,40.004548,0.0 -80.002899,40.004501,0.0 -80.00171,40.003383,0.0 -80.000698,40.004012,0.0 -79.99837,40.003414,0.0 -79.998468,40.001878,0.0 -79.996944,40.002562,0.0 -79.99706,40.004887,0.0 -79.996099,40.008345,0.0 -79.9952,40.009426,0.0 -79.993702,40.010565,0.0 -79.994357,40.01099,0.0 -79.99341,40.011754,0.0 -79.994842,40.015017,0.0 -79.993273,40.017328,0.0 -79.99591,40.017612,0.0 -79.997615,40.017994,0.0 -80.012764,40.010936,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+         <Placemark>
+            <ExtendedData/>
+            <Polygon>
+               <outerBoundaryIs>
+                  <LinearRing>
+                     <coordinates rl:boundingCircle="-77.450279 40.903559 0.9175399918518091">-77.46173,40.908104,0.0 -77.459491,40.899884,0.0 -77.458876,40.897628,0.0 -77.457728,40.893487,0.0 -77.456096,40.895861,0.0 -77.449522,40.897272,0.0 -77.438828,40.901696,0.0 -77.43968,40.902196,0.0 -77.442406,40.901242,0.0 -77.443075,40.913631,0.0 -77.46173,40.908104,0.0</coordinates>
+                  </LinearRing>
+               </outerBoundaryIs>
+            </Polygon>
+         </Placemark>
+      </Folder>
+   </Document>
+</kml>
