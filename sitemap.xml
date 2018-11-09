@@ -3,148 +3,164 @@
 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/</loc>
-    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
+    <loc>https://www.jfjohnson.net/</loc>
+    <lastmod>2018-11-08T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/index.c.2007.html</loc>
-    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <!-- url>
-  <loc>http://home.comcast.net/~dslkjlsdfidk/mealcredits.htm</loc>
-  <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url -->
-  <url>
-    <loc>http://home.comcast.net/~jfjohnson/xxiv/index.html</loc>
-    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
+    <loc>https://www.jfjohnson.net/index.htm</loc>
+    <lastmod>2018-11-08T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/kitchen/pix.htm</loc>
+    <loc>https://www.jfjohnson.net/index-history.htm</loc>
+    <lastmod>2018-11-08T12:00:00+00:00</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+<!--
+  <url>
+    <loc>https://www.jfjohnson.net/index.c.2007.html</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
+  </url>
+-->
+  <url>
+    <loc>https://www.jfjohnson.net/dslkjlsdfidk/mealcredits.htm</loc>
+    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/main.htm</loc>
+    <loc>https://www.jfjohnson.net/xxiv/index.html</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/glendening.htm</loc>
+    <loc>https://www.jfjohnson.net/kitchen/pix.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
+  </url>
+<!--
+  <url>
+    <loc>https://www.jfjohnson.net/main.htm</loc>
+    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/polacco.htm</loc>
+    <loc>https://www.jfjohnson.net/glendening.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/mel_pad.htm</loc>
+    <loc>https://www.jfjohnson.net/polacco.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/margospage.htm</loc>
+    <loc>https://www.jfjohnson.net/mel_pad.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/judyspage.htm</loc>
+    <loc>https://www.jfjohnson.net/margospage.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/page2.htm</loc>
+    <loc>https://www.jfjohnson.net/judyspage.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/mel_anim.htm</loc>
+    <loc>https://www.jfjohnson.net/page2.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/mel_jatormia.htm</loc>
+    <loc>https://www.jfjohnson.net/mel_anim.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/brownie.htm</loc>
+    <loc>https://www.jfjohnson.net/mel_jatormia.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
+  </url>
+-->
+  <url>
+    <loc>https://www.jfjohnson.net/brownie.htm</loc>
+    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/carrotck.htm</loc>
+    <loc>https://www.jfjohnson.net/carrotck.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/cdmbrownies.htm</loc>
+    <loc>https://www.jfjohnson.net/cdmbrownies.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/white_wine_cake.htm</loc>
+    <loc>https://www.jfjohnson.net/white_wine_cake.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
+  </url>
+<!--
+  <url>
+    <loc>https://www.jfjohnson.net/johnspage.htm</loc>
+    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/johnspage.htm</loc>
+    <loc>https://www.jfjohnson.net/birthdaysmjj.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/birthdaysmjj.htm</loc>
+    <loc>https://www.jfjohnson.net/amazon.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/amazon.htm</loc>
+    <loc>https://www.jfjohnson.net/birthdays.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/birthdays.htm</loc>
+    <loc>https://www.jfjohnson.net/page3.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/page3.htm</loc>
+    <loc>https://www.jfjohnson.net/Movie6.html</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/Movie6.html</loc>
+    <loc>https://www.jfjohnson.net/Movie7.html</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/Movie7.html</loc>
+    <loc>https://www.jfjohnson.net/Movie8.html</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/Movie8.html</loc>
+    <loc>https://www.jfjohnson.net/amazoncheck.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/amazoncheck.htm</loc>
+    <loc>https://www.jfjohnson.net/vacationpad.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
+-->
   <url>
-    <loc>http://home.comcast.net/~jfjohnson/vacationpad.htm</loc>
+    <loc>https://www.jfjohnson.net/planets.htm</loc>
     <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>http://home.comcast.net/~jfjohnson/planets.htm</loc>
-    <lastmod>2014-04-17T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>never</changefreq>
   </url>
 </urlset>
