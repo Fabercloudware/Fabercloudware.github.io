@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}} amp-img.contain img{object-fit:contain;}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 </head>
 <body>
@@ -30,30 +30,46 @@
 		height="100vh"
 		layout="fixed-height"
 		single-item
-		src="History172.json">
+		src="History172-2.json">
     <div placeholder>Loading ...</div>
 	<div fallback>Failed to load data.</div>
     <template type="amp-mustache">
 	<amp-carousel class="carousel1"
-	  layout="responsive"
-	  height="450"
-	  width="500"
+	  layout="fixed-height"
+	  height="100vh"
+	  width="auto"
 	  type="slides">	
      {{#lings}}
-      {{#.}}
 	  <div class="slide">
+      {{#0}}
 	  	{{#StandardFields.Photos}}
 	    <amp-img src="{{Uri640}}"
-	      layout="responsive"
-	      width="500"
-	      height="300"
+	      layout="fixed-height"
+	      class="contain"
+	      width="auto"
+	      height="30vh"
 	      alt="{{Name}} {{Caption}}"></amp-img>
 	    {{/StandardFields.Photos}}
-	    <amp-fit-text layout="responsive"
-	      width="500"
-	      height="150">{{StandardFields.PublicRemarks}}</amp-fit-text>
+	    <amp-fit-text layout="fixed-height"
+	      width="auto"
+	      height="15vh">{{StandardFields.StreetNumber}} {{StandardFields.StreetName}} {{StandardFields.StreetSuffix}}<br>
+	      				{{StandardFields.City}} {{StandardFields.StateOrProvince}} {{StandardFields.PostalCode}}<br>
+	      				${{StandardFields.ListPrice}}
+		</amp-fit-text>
+	    <amp-fit-text layout="fixed-height"
+	      width="auto"
+	      height="30vh">{{StandardFields.PublicRemarks}}
+		</amp-fit-text>
+	  {{/0}}
+	    <amp-fit-text layout="fixed-height"
+	      width="auto"
+	      height="25vh"><table border=1><thead><tr><th>Date</th><th>Listing</th><th>Price</th><th>Status</th></tr></thead><tbody>
+	      	<!--{{#.}}-->
+	      	<tr><td>{{StandardFields.WithdrawDate}}{{^StandardFields.WithdrawDate}}{{StandardFields.CloseDate}}{{^StandardFields.CloseDate}}{{StandardFields.CancelDate}}{{^StandardFields.CancelDate}}No Date{{/StandardFields.CancelDate}}{{/StandardFields.CloseDate}}{{/StandardFields.WithdrawDate}}</td><td>{{StandardFields.ListingId}}</td><td>${{StandardFields.ListPrice}}</td><td>{{StandardFields.MlsStatus}}</td></tr>
+	      	<!--{{/.}}-->
+	      </tbody></table> 
+		</amp-fit-text>
 	  </div>
-	  {{/.}} 
       {{/lings}}
     </template>
 </amp-list>
