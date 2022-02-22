@@ -41,8 +41,22 @@ See the License for the specific language governing permissions andlimitations u
     <meta name="twitter:title" content="Johnson Family Album 5th Ed." />
     <meta name="twitter:description" content="Landing page for the Johnson Family Album for photos and other memorabilia. Explore other editions using the hamburger menu." />
     <meta name="twitter:image" content="https://www.jfjohnson.net/SPLASH.GIF" />
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   </head>
-  <body> <!-- Start Navbar -->
+  <body> 
+    <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-62140549-2",
+        "config" : {
+          "UA-62140549-2": { "groups": "default" }
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+    <!-- Start Navbar -->
     <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
       <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle"
         tabindex="0" class="ampstart-navbar-trigger  pr2  "><svg xmlns="http://www.w3.org/2000/svg"
