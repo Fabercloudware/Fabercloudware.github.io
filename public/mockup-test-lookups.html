@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!-- Below is copy/pasted from the downloader on https://datatables.net/download/index -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.6/css/colReorder.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.2.0/css/rowGroup.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchpanes/2.0.2/css/searchPanes.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.4.0/css/select.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/staterestore/1.1.1/css/stateRestore.dataTables.min.css" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/colreorder/1.5.6/js/dataTables.colReorder.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/rowgroup/1.2.0/js/dataTables.rowGroup.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/searchpanes/2.0.2/js/dataTables.searchPanes.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.4.0/js/dataTables.select.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/staterestore/1.1.1/js/dataTables.stateRestore.min.js" crossorigin="anonymous"></script>
+    <!-- Above is copy/pasted from the downloader on https://datatables.net/download/index -->
+    <title>DataTables-Sheets Report</title>
+    <style>
+    .awrapper {
+        /*max-width: 1280px;
+        */
+    }
+    </style>
+</head>
+
+<body>
+    <h2><span class="title"></span> <span class="today"></span></h2>
+    <div class="awrapper">
+        <table id="workSheet" class="display responsive nowrap" style="width:100%">
+            <thead>
+                <th>Last Name</th>
+                <th>Nickname</th>
+                <th>Result</th>
+                <th>Enrolled Programs</th>
+                <th>Gender</th>
+                <th>Primary Childhood HomeAddr1</th>
+                <th>Primary Childhood HomeAddr2</th>
+                <th>Primary Childhood HomeCity</th>
+                <th>Primary Childhood HomeState</th>
+                <th>Primary Childhood HomeZip</th>
+                <th>Primary Childhood HomeCountry Name</th>
+                <th>F1P1Login/Email</th>
+                <th>F1P2Login/Email</th>
+                <th>Alternate Childhood Receives Mail</th>
+                <th>F2P1Login/Email</th>
+                <th>Enrolled Sessions</th>
+                <th>Enrolled Sessions/Programs</th>
+                <th>Enrolled Sessions Abbreviated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abramson</td>
+                    <td>Samantha</td>
+                    <td>Fail</td>
+                    <td>Bogrim</td>
+                    <td>Female</td>
+                    <td>1706 Sandringham</td>
+                    <td></td>
+                    <td>San Antonio</td>
+                    <td>TX</td>
+                    <td>78258</td>
+                    <td></td>
+                    <td>jfjohnson831+Abramson@GMAIL.COM</td>
+                    <td>jfjohnson831+Samantha@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Bogrim</td>
+                    <td>1/BOG</td>
+                </tr>
+                <tr>
+                    <td>Wallace</td>
+                    <td>Jack</td>
+                    <td>Pass</td>
+                    <td>Bogrim and Bogrim</td>
+                    <td>Male</td>
+                    <td>5731 Dumfries Dr</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Wallace@GMAIL.COM</td>
+                    <td>jfjohnson831+Jack@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1 and Session 2</td>
+                    <td>Session 1/Bogrim and Session 2/Bogrim</td>
+                    <td>1/BOG,2/BOG</td>
+                </tr>
+                <tr>
+                    <td>Ackerman</td>
+                    <td>Ben</td>
+                    <td>Pass</td>
+                    <td>Chalutzim</td>
+                    <td>Male</td>
+                    <td>6336 Vanderbilt</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77005</td>
+                    <td></td>
+                    <td>jfjohnson831+Ackerman@GMAIL.COM</td>
+                    <td>jfjohnson831+Ben@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Chalutzim</td>
+                    <td>1/CHAL</td>
+                </tr>
+                <tr>
+                    <td>Camhi</td>
+                    <td>Rafa</td>
+                    <td>Pass</td>
+                    <td>CIT</td>
+                    <td>Male</td>
+                    <td>8877 Frankway Dr</td>
+                    <td>Apt 2231</td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Camhi@GMAIL.COM</td>
+                    <td>jfjohnson831+Rafa@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/CIT</td>
+                    <td>1/CIT</td>
+                </tr>
+                <tr>
+                    <td>Abrahams</td>
+                    <td>Jordan</td>
+                    <td>Pass</td>
+                    <td>Kesher</td>
+                    <td>Female</td>
+                    <td>5601 Sedona Drive</td>
+                    <td></td>
+                    <td>Austin</td>
+                    <td>TX</td>
+                    <td>78759</td>
+                    <td></td>
+                    <td>jfjohnson831+Abrahams@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Kesher</td>
+                    <td>1/KESH</td>
+                </tr>
+                <tr>
+                    <td>Silberlicht</td>
+                    <td>Rebecca</td>
+                    <td>Pass</td>
+                    <td>Kesher and Kesher</td>
+                    <td>Female</td>
+                    <td>5311 Grape St</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Silberlicht@GMAIL.COM</td>
+                    <td>frank@cyjtexas.org</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1 and Session 2</td>
+                    <td>Session 1/Kesher and Session 2/Kesher</td>
+                    <td>1/KESH,2/KESH</td>
+                </tr>
+                <tr>
+                    <td>Abramson</td>
+                    <td>Lauren</td>
+                    <td>Pass</td>
+                    <td>Maginim</td>
+                    <td>Female</td>
+                    <td>1706 Sandringham</td>
+                    <td></td>
+                    <td>San Antonio</td>
+                    <td>TX</td>
+                    <td>78258</td>
+                    <td></td>
+                    <td>jfjohnson831+Abramson@GMAIL.COM</td>
+                    <td>jfjohnson831+Lauren@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Maginim</td>
+                    <td>1/MAG</td>
+                </tr>
+                <tr>
+                    <td>Wallace</td>
+                    <td>Harper</td>
+                    <td>Pass</td>
+                    <td>Maginim and Maginim</td>
+                    <td>Male</td>
+                    <td>5731 Dumfries Dr</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Wallace@GMAIL.COM</td>
+                    <td>jfjohnson831+Harper@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1 and Session 2</td>
+                    <td>Session 1/Maginim and Session 2/Maginim</td>
+                    <td>1/MAG,2/MAG</td>
+                </tr>
+                <tr>
+                    <td>Ben-Ezra</td>
+                    <td>Adam</td>
+                    <td>Pass</td>
+                    <td>Mini Mensch</td>
+                    <td>Male</td>
+                    <td>600 Louisiana Ave</td>
+                    <td></td>
+                    <td>League city</td>
+                    <td>TX</td>
+                    <td>77573</td>
+                    <td></td>
+                    <td>jfjohnson831+Ben-Ezra@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Mini Mensch</td>
+                    <td>1/MINI</td>
+                </tr>
+                <tr>
+                    <td>Babajanov</td>
+                    <td>Lior</td>
+                    <td>Pass</td>
+                    <td>Nitzanim A</td>
+                    <td>Male</td>
+                    <td>5602 Rutherglenn Dr</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Babajanov@GMAIL.COM</td>
+                    <td>jfjohnson831+Lior@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Nitzanim A</td>
+                    <td>1/NIT A</td>
+                </tr>
+                <tr>
+                    <td>Amar</td>
+                    <td>Linoy</td>
+                    <td>Pass</td>
+                    <td>Nitzanim B</td>
+                    <td>Female</td>
+                    <td>8829 Dunlap</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77074</td>
+                    <td></td>
+                    <td>jfjohnson831+Amar@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Nitzanim B</td>
+                    <td>1/NIT B</td>
+                </tr>
+                <tr>
+                    <td>Abram</td>
+                    <td>Ollie</td>
+                    <td>Pass</td>
+                    <td>Ofarim</td>
+                    <td>Male</td>
+                    <td>151 Caraway</td>
+                    <td></td>
+                    <td>Kyle</td>
+                    <td>TX</td>
+                    <td>78640</td>
+                    <td></td>
+                    <td></td>
+                    <td>jfjohnson831+Ollie@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Ofarim</td>
+                    <td>1/OFAR</td>
+                </tr>
+                <tr>
+                    <td>Adelman</td>
+                    <td>Noa</td>
+                    <td>Fail</td>
+                    <td>Segel 10</td>
+                    <td>Female</td>
+                    <td>5317 Valburn Cir</td>
+                    <td></td>
+                    <td>Austin</td>
+                    <td>TX</td>
+                    <td>78731</td>
+                    <td></td>
+                    <td>jfjohnson831+Adelman@GMAIL.COM</td>
+                    <td>jfjohnson831+Noa@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Segel 10</td>
+                    <td>1/SEG10</td>
+                </tr>
+                <tr>
+                    <td>Abony</td>
+                    <td>Leighton</td>
+                    <td>Pass</td>
+                    <td>Segel 9</td>
+                    <td>Male</td>
+                    <td>4447 River Garden Trail</td>
+                    <td></td>
+                    <td>Austin</td>
+                    <td>TX</td>
+                    <td>78746</td>
+                    <td></td>
+                    <td>jfjohnson831+Abony@GMAIL.COM</td>
+                    <td>jfjohnson831+Leighton@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Segel 9</td>
+                    <td>1/SEG9</td>
+                </tr>
+                <tr>
+                    <td>Adelman</td>
+                    <td>Aviv</td>
+                    <td>Fail</td>
+                    <td>Tsofim</td>
+                    <td>Female</td>
+                    <td>5317 Valburn Cir</td>
+                    <td></td>
+                    <td>Austin</td>
+                    <td>TX</td>
+                    <td>78731</td>
+                    <td></td>
+                    <td>jfjohnson831+Adelman@GMAIL.COM</td>
+                    <td>jfjohnson831+Aviv@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 1</td>
+                    <td>Session 1/Tsofim</td>
+                    <td>1/TSOF</td>
+                </tr>
+                <tr>
+                    <td>Adelstein</td>
+                    <td>Nate</td>
+                    <td>Pass</td>
+                    <td>Bogrim</td>
+                    <td>Male</td>
+                    <td>3235 Spider Lily</td>
+                    <td></td>
+                    <td>San Antonio</td>
+                    <td>TX</td>
+                    <td>78258</td>
+                    <td></td>
+                    <td>jfjohnson831+Adelstein@GMAIL.COM</td>
+                    <td>jfjohnson831+Nate@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Bogrim</td>
+                    <td>2/BOG</td>
+                </tr>
+                <tr>
+                    <td>Bielaz</td>
+                    <td>Oren</td>
+                    <td>Pass</td>
+                    <td>Chalutzim</td>
+                    <td>Male</td>
+                    <td>5719 Wigton Dr</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Bielaz@GMAIL.COM</td>
+                    <td>jfjohnson831+Oren@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Chalutzim</td>
+                    <td>2/CHAL</td>
+                </tr>
+                <tr>
+                    <td>Kreindel</td>
+                    <td>Nico</td>
+                    <td>Pass</td>
+                    <td>CIT</td>
+                    <td>Male</td>
+                    <td>8911 Loch Lomond</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Kreindel@GMAIL.COM</td>
+                    <td>jfjohnson831+Nico@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/CIT</td>
+                    <td>2/CIT</td>
+                </tr>
+                <tr>
+                    <td>Ballinger</td>
+                    <td>Derek</td>
+                    <td>Pass</td>
+                    <td>Kesher</td>
+                    <td>Male</td>
+                    <td>1220 Somerset Drive</td>
+                    <td></td>
+                    <td>McKinney</td>
+                    <td>TX</td>
+                    <td>75072</td>
+                    <td></td>
+                    <td>jfjohnson831+Ballinger@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Kesher</td>
+                    <td>2/KESH</td>
+                </tr>
+                <tr>
+                    <td>Broder</td>
+                    <td>Judah</td>
+                    <td>Fail</td>
+                    <td>Maginim</td>
+                    <td>Male</td>
+                    <td>40 Wildwing Ct</td>
+                    <td></td>
+                    <td>Las Vegas</td>
+                    <td>NV</td>
+                    <td>89135</td>
+                    <td></td>
+                    <td></td>
+                    <td>jfjohnson831+Judah@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Maginim</td>
+                    <td>2/MAG</td>
+                </tr>
+                <tr>
+                    <td>Brauer</td>
+                    <td>Jacob</td>
+                    <td>Pass</td>
+                    <td>Mini Mensch</td>
+                    <td>Male</td>
+                    <td>6931 Spanky Branch Ct</td>
+                    <td></td>
+                    <td>Dallas</td>
+                    <td>TX</td>
+                    <td>75248</td>
+                    <td></td>
+                    <td>jfjohnson831+Brauer@GMAIL.COM</td>
+                    <td>jfjohnson831+Jacob@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Mini Mensch</td>
+                    <td>2/MINI</td>
+                </tr>
+                <tr>
+                    <td>Afuta</td>
+                    <td>Lital</td>
+                    <td>Pass</td>
+                    <td>Nitzanim A</td>
+                    <td>Female</td>
+                    <td>5202 Loch Lomond</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Afuta@GMAIL.COM</td>
+                    <td>jfjohnson831+Lital@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Nitzanim A</td>
+                    <td>2/NIT A</td>
+                </tr>
+                <tr>
+                    <td>Broder</td>
+                    <td>Ben</td>
+                    <td>Pass</td>
+                    <td>Nitzanim B</td>
+                    <td>Male</td>
+                    <td>40 Wildwing Ct</td>
+                    <td></td>
+                    <td>Las Vegas</td>
+                    <td>NV</td>
+                    <td>89135</td>
+                    <td></td>
+                    <td></td>
+                    <td>jfjohnson831+Ben@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Nitzanim B</td>
+                    <td>2/NIT B</td>
+                </tr>
+                <tr>
+                    <td>Abrams</td>
+                    <td>Chloe</td>
+                    <td>Pass</td>
+                    <td>Ofarim</td>
+                    <td>Female</td>
+                    <td>10306 Balmforth lane</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Abrams@GMAIL.COM</td>
+                    <td>jfjohnson831+Chloe@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Ofarim</td>
+                    <td>2/OFAR</td>
+                </tr>
+                <tr>
+                    <td>Babajanov</td>
+                    <td>Shira</td>
+                    <td>Pass</td>
+                    <td>Segel 10</td>
+                    <td>Female</td>
+                    <td>5526 Dumfries Dr</td>
+                    <td></td>
+                    <td>Houston</td>
+                    <td>TX</td>
+                    <td>77096</td>
+                    <td></td>
+                    <td>jfjohnson831+Babajanov@GMAIL.COM</td>
+                    <td>jfjohnson831+Shira@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Segel 10</td>
+                    <td>2/SEG10</td>
+                </tr>
+                <tr>
+                    <td>Ackerman</td>
+                    <td>Briana</td>
+                    <td>Pass</td>
+                    <td>Segel 9</td>
+                    <td>Female</td>
+                    <td>456 North Parkway</td>
+                    <td></td>
+                    <td>Golden Beach</td>
+                    <td>FL</td>
+                    <td>33160</td>
+                    <td></td>
+                    <td>jfjohnson831+Ackerman@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Segel 9</td>
+                    <td>2/SEG9</td>
+                </tr>
+                <tr>
+                    <td>Adelstein</td>
+                    <td>Dave</td>
+                    <td>Pass</td>
+                    <td>Tsofim</td>
+                    <td>Male</td>
+                    <td>3235 Spider Lily</td>
+                    <td></td>
+                    <td>San Antonio</td>
+                    <td>TX</td>
+                    <td>78258</td>
+                    <td></td>
+                    <td>jfjohnson831+Adelstein@GMAIL.COM</td>
+                    <td>jfjohnson831+Dave@GMAIL.COM</td>
+                    <td></td>
+                    <td></td>
+                    <td>Session 2</td>
+                    <td>Session 2/Tsofim</td>
+                    <td>2/TSOF</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>Last Name</th>
+                <th>Nickname</th>
+                <th>Result</th>
+                <th>Enrolled Programs</th>
+                <th>Gender</th>
+                <th>Primary Childhood HomeAddr1</th>
+                <th>Primary Childhood HomeAddr2</th>
+                <th>Primary Childhood HomeCity</th>
+                <th>Primary Childhood HomeState</th>
+                <th>Primary Childhood HomeZip</th>
+                <th>Primary Childhood HomeCountry Name</th>
+                <th>F1P1Login/Email</th>
+                <th>F1P2Login/Email</th>
+                <th>Alternate Childhood Receives Mail</th>
+                <th>F2P1Login/Email</th>
+                <th>Enrolled Sessions</th>
+                <th>Enrolled Sessions/Programs</th>
+                <th>Enrolled Sessions Abbreviated</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer>r.01 <span class="tzdate"></span></footer>
+    <script>
+    $(document).ready(function() {
+
+        // Pre-datatables Setup
+        // -- add a text input to each footer cell
+        /*$('#workSheet tfoot th').each(function() {
+            var title = $(this).text();
+            $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+        });*/
+
+        // Datatables config
+        var workSheet = $('#workSheet').DataTable({
+            // state-related
+            "dom": 'Plfrtip', //B for buttons
+            "buttons": [{
+                    "extend": 'savedStates',
+                    "buttons": [
+                        'createState',
+                        'removeAllStates'
+                    ]
+                },
+                'copyHtml5',
+                'print',
+                'csvHtml5',
+                'pdfHtml5',
+                'colvis'
+            ],
+            "language": {
+                "buttons": {
+                    "createState": 'Save View',
+                    "savedStates": 'Saved Views',
+                    "stateRestore": 'Saved View %d',
+                    "removeAllStates": 'Remove All'
+                }
+            },
+            // responsive-related
+            "responsive": { "details": true },
+            "columnDefs": [
+                // relative widths
+                //{ "width": "6.5%", "targets": [0, 4, 5, 6, 7] },
+                //{ "width": "13%", "targets": [2] },
+                //{ "width": "26%", "targets": [1, 3] },
+                // pruning priority
+                { "responsivePriority": 700, "targets": [5, 7, 8, 9, 15] }, // high priority
+                { "responsivePriority": 100, "targets": [0, 1, 2, 3, 4] }, // highest priority
+                // all others lowest priority
+
+                // column formatting
+                { "targets": 2, "render": function(data) { return data.includes('Fail') ? '<span style="color:red;font-weight:bold">' + data + '</span>' : data } }
+
+            ],
+            // search panes
+            "searchPanes": {
+                "columns": [0, 1, 3, 4, 15],
+                "dtOpts": {
+                    "order": [
+                        [1, 'desc']
+                    ]
+                }
+            },
+            // overall formatting
+            "paging": false,
+            "colReorder": true,
+            // get data from Sheets
+            //"ajax": {
+            //    "url": "https://script.google.com/macros/s/.../exec",
+            //    "dataSrc": "values"
+            //},
+            // event handling
+            "initComplete": function(settings, json) {
+                const ctitle = "CYJ-Texas Test Results",
+                    ctoday = (new Date()).toLocaleString("en-US", { "dateStyle": 'full', "timeStyle": 'short' });
+                $("span.today").html(ctoday);
+                $("span.title").html(ctitle);
+                $(document).prop('title', `${ctitle} ${ctoday}`);
+            } //initComplete
+        }); //DataTable
+    }); //ready
+    </script>
+</body>
+
+</html>
