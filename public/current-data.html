@@ -89,7 +89,58 @@
                 <th>Division</th>
                 <th>Person Tags</th>
                 </tr>
-            </thead><!--
+            </thead>
+            <tfoot>
+                <th>Last</th>
+                <th>Nickname</th>
+                <th>Area</th>
+                <th>Enrolled Sessions</th><!-- 3 -->
+                
+                <th>Enrolled Programs</th>
+                <th>School</th>
+                <th>F1P1FirstName</th><!-- 6 -->
+                
+                <th>F1P1LastName</th>
+                <th>F1P1Cell Phone</th>
+                <th>F1P1Login/Email</th><!-- 9 -->
+
+                <th>Status</th>
+                <th>Session</th>
+                <th>Program</th><!-- 12 -->
+                
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Camp Grade</th><!-- 15 -->
+
+                <th>Years as Camper</th>
+                <th>SynagogueDropdown</th>
+                <th>Previous Bunk</th><!-- 18 -->
+
+                <th>F1P2FirstName</th>
+                <th>F1P2LastName</th>
+                <th>F1P2Cell Phone</th><!-- 21 -->
+
+                <th>F1P2Login/Email</th>
+                <th>F1 Enrolled Child Count</th>
+                <th>Session/Status</th><!-- 24 -->
+
+                <th>Application Date</th>
+                <th>Cancellation Post Date</th>
+                <th>WaitList Post Date</th><!-- 27 -->
+
+                <th>Applied Sessions</th>
+                <th>Applied Programs</th>
+                <th>Cancelled Sessions</th><!-- 30 -->
+
+                <th>Waitlisted Sessions</th>
+                <th>PersonID</th>
+                <th>Primary Childhood ID</th><!-- 33 -->
+
+                <th>Division</th>
+                <th>Person Tags</th>
+                </tr>
+            </tfoot>
+            <!--
                 Status ,Session ,Program,  Gender, Age ,Area, Camp Grade School, Years as Campe
 
 Silberlicht, Frank  [Area]    [EN-Session - Program]  [School]   F1P1FirstName F1P1LastName F1P1Cell Phone F1P1Login/Email
@@ -130,32 +181,12 @@ Silberlicht, Frank  [Area]    [EN-Session - Program]  [School]   F1P1FirstName F
 33 Primary Childhood ID.
 34 Division.
 35 Person Tags.
-            <tfoot>
-                <th>Last Name</th>
-                <th>Nickname</th>
-                <th>Result</th>
-                <th>Enrolled Programs</th>
-                <th>Gender</th>
-                <th>Primary Childhood HomeAddr1</th>
-                <th>Primary Childhood HomeAddr2</th>
-                <th>Primary Childhood HomeCity</th>
-                <th>Primary Childhood HomeState</th>
-                <th>Primary Childhood HomeZip</th>
-                <th>Primary Childhood HomeCountry Name</th>
-                <th>F1P1Login/Email</th>
-                <th>F1P2Login/Email</th>
-                <th>Alternate Childhood Receives Mail</th>
-                <th>F2P1Login/Email</th>
-                <th>Enrolled Sessions</th>
-                <th>Enrolled Sessions/Programs</th>
-                <th>Enrolled Sessions Abbreviated</th>
-                </tr>
-            </tfoot>
+
 
             -->
         </table>
     </div>
-    <footer>r.01 <span class="tzdate">Example #3 (live connection to <a href="https://docs.google.com/spreadsheets/d/1IPfIbpHxevNlb11khbnnqlEz1wRfHRWqO6-C2POQFWg/edit?usp=sharing">Worksheet#1</a></span></footer>
+    <footer>r.01 <span class="tzdate">Example #3 (live connection to <a target="_blank" href="https://docs.google.com/spreadsheets/d/1IPfIbpHxevNlb11khbnnqlEz1wRfHRWqO6-C2POQFWg/edit?usp=sharing">Worksheet#1</a>)</span></footer>
     <script>
     $(document).ready(function() {
 
@@ -249,8 +280,10 @@ Silberlicht, Frank  [Area]    [EN-Session - Program]  [School]   F1P1FirstName F
             "colReorder": true,
             // get data from Sheets
             "ajax": {
-                "url": /* "/RPT/testdata.json", // */ "https://script.google.com/macros/s/AKfycbx28x9HF2HBE_lSJIMEp8qFnpWCPYwTgyJkhVuQHOY-u81MDyRcssJwn8tlZVRJwaTE/exec",
+                "url": /* "/RPT/testdata.json", // */ "https://script.google.com/macros/s/AKfycbzuhOHc6Q5CNHoitpK7C4BoczPijmf4UmHFq7GJKvCAl6V1LSQlw3ZpY1jpkCSFtr5y/exec",
                 "contentType": "application/json",
+                "crossDomain": true,
+                "method": "get",
                 "dataSrc": dataSrcObj => dataSrcObj.values.filter( (r,i) => i > 0 ) // removes header row
                     .map( (r) => {
                         if (r.length===36) return r;
