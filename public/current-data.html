@@ -186,7 +186,7 @@ Silberlicht, Frank  [Area]    [EN-Session - Program]  [School]   F1P1FirstName F
             -->
         </table>
     </div>
-    <footer>r.01 <span class="tzdate">Example #3 (live connection to <a target="_blank" href="https://docs.google.com/spreadsheets/d/1IPfIbpHxevNlb11khbnnqlEz1wRfHRWqO6-C2POQFWg/edit?usp=sharing">Worksheet#1</a>)</span></footer>
+    <footer>r.01 <span class="tzdate">Example #3 (live connection to <a target="_blank" href="https://docs.google.com/spreadsheets/d/10rf6iK9TxtuPzeVpIn05X1TL4haTyndtJmlnNksgVTg/edit?usp=sharing">Worksheet#3</a>)</span></footer>
     <script>
     $(document).ready(function() {
 
@@ -281,9 +281,6 @@ Silberlicht, Frank  [Area]    [EN-Session - Program]  [School]   F1P1FirstName F
             // get data from Sheets
             "ajax": {
                 "url": /* "/RPT/testdata.json", // */ "https://script.google.com/macros/s/AKfycbzuhOHc6Q5CNHoitpK7C4BoczPijmf4UmHFq7GJKvCAl6V1LSQlw3ZpY1jpkCSFtr5y/exec",
-                "contentType": "application/json",
-                "crossDomain": true,
-                "method": "get",
                 "dataSrc": dataSrcObj => dataSrcObj.values.filter( (r,i) => i > 0 ) // removes header row
                     .map( (r) => {
                         if (r.length===36) return r;
