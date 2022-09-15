@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!-- Below is copy/pasted from the downloader on https://datatables.net/download/index -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.6/css/colReorder.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.2.0/css/rowGroup.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchpanes/2.0.2/css/searchPanes.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.4.0/css/select.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/staterestore/1.1.1/css/stateRestore.dataTables.min.css" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/colreorder/1.5.6/js/dataTables.colReorder.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/rowgroup/1.2.0/js/dataTables.rowGroup.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/searchpanes/2.0.2/js/dataTables.searchPanes.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.4.0/js/dataTables.select.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/staterestore/1.1.1/js/dataTables.stateRestore.min.js" crossorigin="anonymous"></script>
+    <!-- Above is copy/pasted from the downloader on https://datatables.net/download/index -->
+    <title>DataTables-Sheets Report</title>
+    <style>
+    .awrapper {
+        /*max-width: 1280px;
+        */
+    }
+    </style>
+</head>
+
+<body>
+    <h2><span class="title"></span></h2> <h3>@ <span class="today"></span></h3>
+    <div class="awrapper">
+        <table id="workSheet" class="display responsive nowrap" style="width:100%">
+            <thead>
+                <th>Last</th>
+                <th>Nickname</th>
+                <th>Area</th>
+                <th>Enrolled Sessions</th><!-- 3 -->
+                
+                <th>Enrolled Programs</th>
+                <th>School</th>
+                <th>F1P1FirstName</th><!-- 6 -->
+                
+                <th>F1P1LastName</th>
+                <th>F1P1Cell Phone</th>
+                <th>F1P1Login/Email</th><!-- 9 -->
+
+                <th>Status</th>
+                <th>Session</th>
+                <th>Program</th><!-- 12 -->
+                
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Camp Grade</th><!-- 15 -->
+
+                <th>Years as Camper</th>
+                <th>SynagogueDropdown</th>
+                <th>Previous Bunk</th><!-- 18 -->
+
+                <th>F1P2FirstName</th>
+                <th>F1P2LastName</th>
+                <th>F1P2Cell Phone</th><!-- 21 -->
+
+                <th>F1P2Login/Email</th>
+                <th>F1 Enrolled Child Count</th>
+                <th>Session/Status</th><!-- 24 -->
+
+                <th>Application Date</th>
+                <th>Cancellation Post Date</th>
+                <th>WaitList Post Date</th><!-- 27 -->
+
+                <th>Applied Sessions</th>
+                <th>Applied Programs</th>
+                <th>Cancelled Sessions</th><!-- 30 -->
+
+                <th>Waitlisted Sessions</th>
+                <th>PersonID</th>
+                <th>Primary Childhood ID</th><!-- 33 -->
+
+                <th>Division</th>
+                <th>Person Tags</th>
+                </tr>
+            </thead><!--
+                Status ,Session ,Program,  Gender, Age ,Area, Camp Grade School, Years as Campe
+
+Silberlicht, Frank  [Area]    [EN-Session - Program]  [School]   F1P1FirstName F1P1LastName F1P1Cell Phone F1P1Login/Email
+
+ 0 Status.
+ 1 Session.
+ 2 Program.
+ 3 Last Name.
+ 4 Nickname.
+ 5 Gender.
+ 6 Age.
+ 7 Area.
+ 8 Camp Grade.
+ 9 School.
+10 SynagogueDropdown.
+11 Years as Camper.
+12 Previous Bunk.
+13 F1P1FirstName.
+14 F1P1LastName.
+15 F1P1Cell Phone.
+16 F1P1Login/Email.
+17 F1P2FirstName.
+18 F1P2LastName.
+19 F1P2Cell Phone.
+20 F1P2Login/Email.
+21 F1 Enrolled Child Count.
+22 Session/Status.
+23 Application Date.
+24 Cancellation Post Date.
+25 WaitList Post Date.
+26 Applied Sessions.
+27 Applied Programs.
+28 Enrolled Sessions.
+29 Enrolled Programs.
+30 Cancelled Sessions.
+31 Waitlisted Sessions.
+32 PersonID.
+33 Primary Childhood ID.
+34 Division.
+35 Person Tags.
+            <tfoot>
+                <th>Last Name</th>
+                <th>Nickname</th>
+                <th>Result</th>
+                <th>Enrolled Programs</th>
+                <th>Gender</th>
+                <th>Primary Childhood HomeAddr1</th>
+                <th>Primary Childhood HomeAddr2</th>
+                <th>Primary Childhood HomeCity</th>
+                <th>Primary Childhood HomeState</th>
+                <th>Primary Childhood HomeZip</th>
+                <th>Primary Childhood HomeCountry Name</th>
+                <th>F1P1Login/Email</th>
+                <th>F1P2Login/Email</th>
+                <th>Alternate Childhood Receives Mail</th>
+                <th>F2P1Login/Email</th>
+                <th>Enrolled Sessions</th>
+                <th>Enrolled Sessions/Programs</th>
+                <th>Enrolled Sessions Abbreviated</th>
+                </tr>
+            </tfoot>
+
+            -->
+        </table>
+    </div>
+    <footer>r.01 <span class="tzdate">Example #3 (live connection to <a href="https://docs.google.com/spreadsheets/d/1IPfIbpHxevNlb11khbnnqlEz1wRfHRWqO6-C2POQFWg/edit?usp=sharing">Worksheet#1</a></span></footer>
+    <script>
+    $(document).ready(function() {
+
+        // Datatables config
+        var workSheet = $('#workSheet').DataTable({
+            // state-related
+            "dom": 'Plfrtip', //B for buttons
+            "buttons": [{
+                    "extend": 'savedStates',
+                    "buttons": [
+                        'createState',
+                        'removeAllStates'
+                    ]
+                },
+                'copyHtml5',
+                'print',
+                'csvHtml5',
+                'pdfHtml5',
+                'colvis'
+            ],
+            "language": {
+                "buttons": {
+                    "createState": 'Save View',
+                    "savedStates": 'Saved Views',
+                    "stateRestore": 'Saved View %d',
+                    "removeAllStates": 'Remove All'
+                }
+            },
+            // responsive-related
+            "responsive": { "details": true },
+            "columnDefs": [
+                // assignments
+                { target:  0, data:  3, searchable: true, orderable: true },
+                { target:  1, data:  4, searchable: true, orderable: true },
+                { target:  2, data:  7, searchable: true, orderable: true },
+                { target:  3, data: 28, searchable: true, orderable: true },
+
+                { target:  4, data: 29, searchable: true, orderable: true },
+                { target:  5, data:  9, searchable: true, orderable: true },
+                { target:  6, data: 13, searchable: true, orderable: true },
+
+                { target:  7, data: 14, searchable: true, orderable: true },
+                { target:  8, data: 15, searchable: true, orderable: true },
+                { target:  9, data: 16, searchable: true, orderable: true },
+
+                { target: 10, data:  0, searchable: true, orderable: true },
+                { target: 11, data:  1, searchable: true, orderable: true },
+                { target: 12, data:  2, searchable: true, orderable: true },
+
+                { target: 13, data:  5, searchable: true, orderable: true },
+                { target: 14, data:  6, searchable: true, orderable: true, render: (data,type,_) => type==="sp" ? Math.round(parseFloat(data)).toFixed(0) : data, searchPanes: { "orthogonal": "sp" } },
+                { target: 15, data:  8, searchable: true, orderable: true },
+
+                { target: 16, data: 11, searchable: true, orderable: true },
+                { target: 17, data: 10, searchable: false, orderable: false },
+                { target: 18, data: 12, searchable: false, orderable: false },
+
+                { target: 19, data: 17, searchable: false, orderable: false },
+                { target: 20, data: 18, searchable: false, orderable: false },
+                { target: 21, data: 19, searchable: false, orderable: false },
+
+                { target: 22, data: 20, searchable: false, orderable: false },
+                { target: 23, data: 21, searchable: false, orderable: false },
+                { target: 24, data: 22, searchable: false, orderable: false },
+
+                // relative widths
+                //{ "width": "6.5%", "targets": [0, 4, 5, 6, 7] },
+                //{ "width": "13%", "targets": [2] },
+                //{ "width": "26%", "targets": [1, 3] },
+
+                // pruning priority
+                { "responsivePriority": 99, "targets": [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35] }, // lowest priority to keep
+                { "responsivePriority":  5, "targets": [10, 11, 12, 13, 14, 15, 16] }, // mid priority to keep
+                { "responsivePriority":  1, "targets": [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9] }, // highest priority to keep
+
+                // column formatting
+                // { "targets": 2, "render": function(data) { return data.includes('Fail') ? '<span style="color:red;font-weight:bold">' + data + '</span>' : data } }
+
+            ],
+            // search panes
+            "searchPanes": {
+                "columns": [10, 11, 12, 13, 14, 15, 16],
+                "dtOpts": {
+                    "order": [
+                        [1, 'desc']
+                    ]
+                }
+            },
+            // overall formatting
+            "paging": false,
+            "colReorder": true,
+            // get data from Sheets
+            "ajax": {
+                "url": /* "/RPT/testdata.json", // */ "https://script.google.com/macros/s/AKfycbx28x9HF2HBE_lSJIMEp8qFnpWCPYwTgyJkhVuQHOY-u81MDyRcssJwn8tlZVRJwaTE/exec",
+                "contentType": "application/json",
+                "dataSrc": dataSrcObj => dataSrcObj.values.filter( (r,i) => i > 0 ) // removes header row
+                    .map( (r) => {
+                        if (r.length===36) return r;
+                        if (r.length > 36) return r.slice(0,36);
+                        return r.concat(new Array(36 - r.length).fill(""));
+                    })
+            },
+            // event handling
+            "initComplete": function(settings, json) {
+                const ctitle = "CYJ-Texas Enrollment This Year: Current Data",
+                    ctoday = (new Date()).toLocaleString("en-US", { "dateStyle": 'full', "timeStyle": 'short' });
+                $("span.today").html(ctoday);
+                $("span.title").html(ctitle);
+                $(document).prop('title', `${ctitle}@${ctoday}`);
+            } //initComplete
+        }); //DataTable
+    }); //ready
+    </script>
+</body>
+
+</html>
